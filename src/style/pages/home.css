@@ -1,0 +1,185 @@
+html{
+    font-size: 64%;
+}
+
+body {
+    margin: 0;
+}
+  
+h1{
+    color: white;
+}
+
+
+
+
+
+
+/*////////////////////////////////////////////// MENU INICIAL ///////////////////////////////// */
+
+
+.headerBody{
+    position: fixed;
+    margin: 0;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(240, 248, 255, 0);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.228);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    .headerCard{
+        display: flex;
+        flex-direction: row;
+        width: 90%; 
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+        .headerCard h1{
+            color: white;
+            cursor: pointer;
+            font-size: 3rem;
+        }
+        .headerCard ul{
+            display: flex;
+            align-items: center;
+            margin: 0;
+        }
+            .headerCard h2{
+                font-size: 1.7rem;
+                color: white;
+                text-align: center;
+                cursor: pointer;
+                margin-right: 2vw;
+            }
+        .menuBtn{
+            display: none;
+        }
+.menuMobileBody{
+    display: none;
+}
+    .closeMenuBtn{
+        display: none;
+    }
+        
+@media (max-width: 1036px) {
+    html {
+        font-size: 50%;
+    }
+}
+@media (max-width: 827px) {
+    /* html {
+        font-size: 40%;
+    } */
+    .headerCard{
+        width: 95%;
+    }
+}
+@media (max-width: 780px) {
+    
+    .headerCard{
+        width: 98%;
+    }
+}
+
+@media (max-width: 768px) {
+  .headerCard ul{
+    display: none;
+  }
+  .menuBtn{
+    position: absolute;
+    right: 40px;
+    display: block  ;
+    width: 30px;
+    height: 30px;
+    color: white;
+  }
+  .closeMenuBtn{
+    position: absolute;
+    display: block  ;
+    right: 40px;
+    margin-top: -90vh;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 15px;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .menuMobileBody{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 200vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(20px);
+    z-index: 10;
+  }
+  .menuMobileBody ul{
+    position: absolute;
+    display: block;
+    width: 40%;
+    height: 50vh;
+    z-index: 11;
+  }
+
+  .menuMobileBody h2 {
+    padding: 10px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+    z-index: 12;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.appBody{
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../contents/images/backgrounds/3.jpg');
+    background-size: cover; /* ou 'contain', dependendo do comportamento desejado */
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1;
+}
+.sobreMinBody{
+    width: 50%;
+    height: 50vh;
+    backdrop-filter: blur(20px);
+    background-color: rgba(240, 248, 255, 0.119);
+    z-index: 1;
+}

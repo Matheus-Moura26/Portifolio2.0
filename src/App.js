@@ -69,9 +69,20 @@ function App() {
       </div>
       
       <div className="habilidadesBody">
-        <p className="text">
-          react | node.js | Express | Mongoose | python | SQL | NoSQL | MySQL | MongoDB
-        </p>
+        <div className="habilidadesCard">
+          <h2>FrontEnd</h2>
+          <p>identidade / UX & UI / Animação</p>
+          <p>React / Web / breve Mobile com React Native</p>
+          <p></p>
+          <p></p>
+        </div>
+        
+        <div className="habilidadesCard">
+          <h2>BackEnd</h2>
+          <p>React / Node.js / Puppeter</p>
+          <p>Express / Mongoose / Python</p>
+          <p>MySQL / MongoDB / Entre outros...</p>
+        </div>
       </div>
 
 

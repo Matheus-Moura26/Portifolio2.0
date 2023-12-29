@@ -311,13 +311,21 @@ h1{
 .habilidadesBody{
     margin-top: 80vh;
     height: 50vh;
-    width: 80%;
+    width: 80%;/* 
     background-color: rgba(240, 248, 255, 0.084);
-    backdrop-filter: blur(20px);
-    z-index: 5;
+    backdrop-filter: blur(20px); */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-    .habilidadesBody .text{
+    .habilidadesCard h2{
         color: white;
         font-size: 2rem;
+        text-align: center;
+    }
+    .habilidadesCard p{
+        color: white;
+        font-size: 2rem;
+        text-align: center;
     }

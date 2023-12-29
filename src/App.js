@@ -54,10 +54,28 @@ function App() {
         </div>
       </div>
 
-
-      <div className="sobreMinBody" data-aos="fade-up">
-      
+      {/* Sobre mim */}
+      <div className="sobreMinBody" data-aos="fade-right">
+          <p className="nome">Matheus Moura</p>
+          <h2>Desenvolvedor FullStack</h2>
+          <p className="text">Com uma expertise sólida em economia e maestria nas tecnologias de ponta, como Node.js, Python e ReactJS, eu sou a peça-chave 
+          que falta para elevar o seu projeto ao patamar extraordinário. Transformo desafios em oportunidades, moldando soluções que transcendem expectativas.
+           Como um freelancer excepcional, estou pronto para trazer inovação, eficiência e resultados surpreendentes para o seu empreendimento. Deixe-me ser a 
+           força propulsora por trás do seu sucesso. Vamos transformar ideias em conquistas notáveis juntos. <br/> <span className="textSaibaMais">Saiba mais</span></p>
+          
       </div>
+      <div className="textoAnimado1Body">
+        <span></span>
+      </div>
+      
+      <div className="habilidadesBody">
+        <p className="text">
+          react | node.js | Express | Mongoose | python | SQL | NoSQL | MySQL | MongoDB
+        </p>
+      </div>
+
+
+      
     </div>
   );
 }

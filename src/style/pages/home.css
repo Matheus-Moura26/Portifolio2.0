@@ -31,6 +31,7 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1;
 }
     .headerCard{
         display: flex;
@@ -166,20 +167,157 @@ h1{
     margin: 0;
     width: 100%;
     min-height: 100vh;
-    background-image: url('../contents/images/backgrounds/3.jpg');
-    background-size: cover; /* ou 'contain', dependendo do comportamento desejado */
+    /* background-image: url('../contents/images/backgrounds/3.jpg');
+    background-size: cover; 
     background-position: center center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+    background-color: rgb(23, 22, 21);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: space-around;
     z-index: 1;
 }
-.sobreMinBody{
-    width: 50%;
-    height: 50vh;
-    backdrop-filter: blur(20px);
-    background-color: rgba(240, 248, 255, 0.119);
-    z-index: 1;
+    .sobreMinBody{
+        top: 0;
+        margin-top: 15vh;
+        position: absolute;
+        left: 5px;
+        width: 50%;
+        height: 50vh;
+        backdrop-filter: blur(20px);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        
+    }
+    
+        .sobreMinBody .nome{
+            margin-bottom: 0px;
+            font-size: 1.8rem;
+            color: white;
+            text-align: center;
+        }
+        .sobreMinBody h2{
+            margin-top: 0px;
+            font-size: 2.5rem;
+            color: white;
+            text-align: center;
+        }
+
+        .sobreMinBody .text{
+            margin: 0;
+            font-size: 1.8rem;
+            color: white;
+            text-align: center;
+        }
+        .sobreMinBody .textSaibaMais{
+            margin: 0;
+            font-size: 1.4rem;
+            color: white;
+            text-align: center;
+            border-bottom: 1px solid white;
+            cursor: pointer;
+        }
+        
+    .textoAnimado1Body{
+        top: 15vh;
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        right: 0px;
+        width: 48%;
+        height: 50vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+        .textoAnimado1Body p{
+            color: white;
+            font-size: 6rem;
+        }    
+        .textoAnimado1Body span{
+            margin-left: 12vw;
+            position: relative;
+            color: orangered;
+            font-size: 6rem;
+            
+        }  
+        /* @media (max-width: 528px){
+            // Mudar, colocar frase com animação acima do meu nome e texto ambos centralizados
+        }  */
+        .textoAnimado1Body span::before{
+            content: "";
+            animation: palavras 21s infinite;
+            text-align: center;
+        }  
+        .textoAnimado1Body span::after{
+            content: "";
+            position: absolute;
+            height: 7.5rem;
+            border-left: 2px solid orangered;
+            right: -10px;
+            opacity: 1;
+            animation: cursor .8s infinite, digitando 21s steps(15) infinite;
+            width: calc(100% + 18px);
+            background-color: rgb(23, 22, 21);
+        }  
+        
+        @keyframes digitando{
+            10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+                width: 0;
+            }
+            5%,20%,25%,40%,45%,60%,65%,80%,85%{
+                width: calc(100% + 18px);
+            }
+        }
+
+        @keyframes cursor{
+            0%{
+                border-left: 2px solid rgb(23, 22, 21);
+            }
+        }
+        @keyframes palavras {
+            0%,20%{
+                content: " já Inovou?";
+            }
+            21%,40%{
+                content: " deseja crescer?";
+            }
+            41%,60%{
+                content: "quer continuar vencendo?";
+                font-size: 4.8rem;
+                
+            }
+            61%,80%{
+                content: " Acredita no seu sonho?";
+            }
+            81%, 100%{
+                content: " vamos fazer isto juntos!";
+                font-size: 5rem;
+            }
+        } 
+
+@media (max-width: 850px){
+    
 }
+
+@media (max-width: 465px){
+    
+}
+
+
+.habilidadesBody{
+    margin-top: 80vh;
+    height: 50vh;
+    width: 80%;
+    background-color: rgba(240, 248, 255, 0.084);
+    backdrop-filter: blur(20px);
+    z-index: 5;
+}
+
+    .habilidadesBody .text{
+        color: white;
+        font-size: 2rem;
+    }

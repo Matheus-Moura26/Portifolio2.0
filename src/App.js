@@ -58,21 +58,25 @@ function App() {
       <div className="sobreMinBody" data-aos="fade-right">
           <p className="nome">Matheus Moura</p>
           <h2>Desenvolvedor FullStack</h2>
-          <p className="text">Com uma expertise sólida em economia e maestria nas tecnologias de ponta, como Node.js, Python e ReactJS, eu sou a peça-chave 
+          <p className="text">Com uma expertise sólida em economia e maestria nas tecnologias de ponta, como Node.js, Python, ReactJS, eu sou a peça-chave 
           que falta para elevar o seu projeto ao patamar extraordinário. Transformo desafios em oportunidades, moldando soluções que transcendem expectativas.
            Como um freelancer excepcional, estou pronto para trazer inovação, eficiência e resultados surpreendentes para o seu empreendimento. Deixe-me ser a 
-           força propulsora por trás do seu sucesso. Vamos transformar ideias em conquistas notáveis juntos. <br/> <span className="textSaibaMais">Saiba mais</span></p>
+           força propulsora por trás do seu sucesso. Vamos transformar ideias em conquistas notáveis juntos.   </p> <div style={{width: "50vw",  display: "flex", alignItems: "center", justifyContent: "center" }}> <span className="textSaibaMais">Saiba mais</span></div> 
           
       </div>
       <div className="textoAnimado1Body">
         <span></span>
       </div>
+
+      <div style={{width: "100%", height: "5vh", marginTop: "85vh", display: "flex", alignItems: "center", justifyContent: "center", textAlign: "center"}}>
+      <h2 style={{ color: "white", width: "100%" }}></h2>
+      </div>
       
       <div className="habilidadesBody">
         <div className="habilidadesCard">
           <h2>FrontEnd</h2>
-          <p>identidade / UX & UI / Animação</p>
-          <p>React / Web / breve Mobile com React Native</p>
+          <p>Identidade / UX & UI / Animação</p>
+          <p>React / Web / Em breve Mobile com React Native</p>
           <p></p>
           <p></p>
         </div>
@@ -85,6 +89,32 @@ function App() {
         </div>
       </div>
 
+      {/* <div className="habilidadesImagens">
+        <div className="imagem">
+        <div className="filtro"></div>
+          <h2>React</h2>
+        </div>
+
+
+        <div className="imagem">
+        <div className="filtro"></div>
+          <h2>React</h2>
+        </div>        
+        
+
+      </div> */}
+      <div style={{marginTop: "10vh", marginBottom: "10vh",width: "80%" , height: "60vh", backgroundColor: "white", borderRadius: "20px", display:"flex",flexWrap: "wrap", flexDirection: "row", justifyContent: "space-between"}}>
+        <div style={{width: "49%", height: "60vh", border:"1px solid black"}}>
+          <div>Matheus Moura</div>
+          <div>Projeto</div>
+          <div>Tecnologia</div>
+        </div>
+        <div style={{width: "49%", height: "60vh", border:"1px solid black", display:"flex", alignItems:"center", justifyContent:"center", flexDirection: "column"}}>
+          <div style={{marginTop: "20px",width: "50%", height: "20vh", border: "1px solid black"}}></div>
+          <div style={{marginTop: "20px",width: "50%", height: "20vh", border: "1px solid black"}}></div>
+          <div style={{marginTop: "20px",width: "50%", height: "20vh", border: "1px solid black"}}></div>
+        </div>    
+      </div>
 
       
     </div>

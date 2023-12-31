@@ -176,13 +176,14 @@ h1{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
     z-index: 1;
 }
     .sobreMinBody{
         top: 0;
-        margin-top: 15vh;
+        margin-top: 30vh;
         position: absolute;
-        left: 5px;
+        left: 3vw;
         width: 50%;
         height: 50vh;
         backdrop-filter: blur(20px);
@@ -210,9 +211,10 @@ h1{
             margin: 0;
             font-size: 1.8rem;
             color: white;
-            text-align: center;
+            text-align: justify;
         }
         .sobreMinBody .textSaibaMais{
+            
             margin: 0;
             font-size: 1.4rem;
             color: white;
@@ -222,7 +224,7 @@ h1{
         }
         
     .textoAnimado1Body{
-        top: 15vh;
+        top: 30vh;
         position: absolute;
         margin: 0;
         padding: 0;
@@ -302,28 +304,83 @@ h1{
         
         
         
-        .habilidadesBody{
-            margin-top: 90vh;
-            height: 50vh;
-            width: 80%;/* 
-            background-color: rgba(240, 248, 255, 0.084);
-            backdrop-filter: blur(20px); */
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-around;
+    .habilidadesBody{
+        margin-top: 7vh;
+        margin-bottom: 200px;
+        height: 60vh;
+        width: 80%;/* 
+        background-color: rgba(240, 248, 255, 0.084);
+        backdrop-filter: blur(20px); */
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: white;
+        border-radius: 20px;
+    }
+        .habilidadesCard{
+            margin: 50px;
         }
         
         .habilidadesCard h2{
-            color: white;
+            color: black;
             font-size: 2rem;
             text-align: center;
         }
         .habilidadesCard p{
-            color: white;
+            color: black;
             font-size: 2rem;
             text-align: center;
         }
 
+    .habilidadesImagens{
+        margin-top: 5vh;
+        margin-bottom: 10vh;
+        width: 90%;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+        .habilidadesImagens .imagem{
+            background-image: url('../contents/images/conhecimentos/teste.jpg');
+            background-size: cover; 
+            background-position: center center;
+            background-repeat: no-repeat;
+            width: 45%;
+            height: 80vh;
+            box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.68);
+        }
+        .habilidadesImagens .imagem h2{
+            position: absolute;
+            margin-left: 15% ;
+            margin-top: 30px;
+            text-align: center;
+            font-size: 6.5rem;
+            color: white;
+            font-weight: bolder;
+            font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            z-index: 3;
+            text-shadow: 1px 5px 10px rgb(0, 0, 0);
+        }
+    .filtro{
+        position: absolute;
+        width: 40.5%;
+        height: 80vh;
+        opacity: .1;
+        transition: .3s ease-out;
+    }
+    .filtro:hover{
+        position: absolute;
+        width: 40.5%;
+        height: 80vh;
+        backdrop-filter: blur(20px);
+        opacity: 1;
+        z-index: 1;
+    }
+
+
+        
 
         @media (max-width: 500px){
             .textoAnimado1Body {

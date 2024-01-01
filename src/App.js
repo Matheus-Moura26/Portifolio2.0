@@ -103,16 +103,20 @@ function App() {
         
 
       </div> */}
-      <div style={{marginTop: "10vh", marginBottom: "10vh",width: "80%" , height: "60vh", backgroundColor: "white", borderRadius: "20px", display:"flex",flexWrap: "wrap", flexDirection: "row", justifyContent: "space-between"}}>
-        <div style={{width: "49%", height: "60vh", border:"1px solid black"}}>
-          <div>Matheus Moura</div>
-          <div>Projeto</div>
-          <div>Tecnologia</div>
+      <div style={{marginTop: "10vh", marginBottom: "20vh",width: "80%" , height: "60vh", backgroundColor: "white", borderRadius: "20px", display:"flex",flexWrap: "wrap", flexDirection: "row", justifyContent: "space-between"}}>
+        <div style={{width: "50.5%", height: "60vh", border:"1px solid black", display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"space-around"}}>
+          <div style={{}}><h2 style={{fontSize:"3.5rem"}}>Matheus Moura</h2></div>
+          <div><h3 style={{fontSize:"3rem", fontWeight:"lighter"}}>Projeto</h3></div>
+          <div><p style={{fontSize:"2rem", fontWeight:"lighter"}}>Descrição</p></div>
+          <div><p style={{fontSize:"1.8rem"}}>Tecnologia</p></div>
         </div>
-        <div style={{width: "49%", height: "60vh", border:"1px solid black", display:"flex", alignItems:"center", justifyContent:"center", flexDirection: "column"}}>
-          <div style={{marginTop: "20px",width: "50%", height: "20vh", border: "1px solid black"}}></div>
-          <div style={{marginTop: "20px",width: "50%", height: "20vh", border: "1px solid black"}}></div>
-          <div style={{marginTop: "20px",width: "50%", height: "20vh", border: "1px solid black"}}></div>
+        <div style={{width: "49%", height: "60vh", maxHeight: "60vh", border:"1px solid black", display:"flex", alignItems:"center", justifyContent:"flex-start", flexDirection: "column", overflowY:"auto"}}>
+          <div style={{marginTop: "20px",width: "50%", height: "20vh", minHeight:"20vh", border: "1px solid black"}}></div>
+          <div style={{marginTop: "20px",width: "50%", height: "20vh", minHeight:"20vh", border: "1px solid black"}}></div>
+          <div style={{marginTop: "20px",width: "50%", height: "20vh", minHeight:"20vh", border: "1px solid black"}}></div>
+          <div style={{marginTop: "20px",width: "50%", height: "20vh", minHeight:"20vh", border: "1px solid black"}}></div>
+          <div style={{marginTop: "20px",width: "50%", height: "20vh", minHeight:"20vh", border: "1px solid black"}}></div>
+          <div style={{marginTop: "20px",width: "50%", height: "20vh", minHeight:"20vh", border: "1px solid black"}}></div>
         </div>    
       </div>
 

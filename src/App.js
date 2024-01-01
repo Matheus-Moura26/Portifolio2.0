@@ -10,9 +10,33 @@ import { TiThMenu } from "react-icons/ti";
 import Aos from "aos";
 import "aos/dist/aos.css" 
 import React, { useEffect, useState } from 'react'
-
+import "./style/contents/images/conhecimentos/teste.jpg"
 
 function App() {
+
+  //////////////////////////////////////Big Objecs///////////////////////////////////////
+  const [projetos, setProjetos] = useState([
+    {nome:"Blue Wizard",
+     descricao:"Apresentamos Blue Wizard, uma ferramenta que tem proporcionado inovação e crescimento a diversos negócios, mesmo em meio a desafios. Com recursos avançados, este sistema oferece automação de vendas em diferentes plataformas e centraliza dados estratégicos de marketing. Além disso, a funcionalidade de dropshipping facilita a oferta de produtos diversificados sem a necessidade de estoque, adaptando-se às demandas do mercado de maneira eficiente. Descubra como Blue Wizard tem contribuído para a evolução de negócios, oferecendo soluções práticas e inovadoras.",
+     tecnologias: ["React", "Python", "MySQL", "MongoDB"], 
+     fontColor:"white", 
+     backgroundImg:"./style/contents/images/conhecimentos/React.jpg", 
+     backgroundColor:"white", 
+     link:""},
+    
+    {nome:"Brasil Luvas", 
+    descricao:"A Brasil Luvas é uma empresa líder no mercado de equipamentos de segurança e ferramentas para construção civil. Atuando há mais de 20 anos, a empresa é especializada na representação de produtos de alta qualidade", 
+    tecnologias:["React"], 
+    fontColor:"white", 
+    backgroundImg:"./style/contents/images/conhecimentos/teste.jpg", 
+    backgroundColor:"white", 
+    link:"https://brasilluvaseferramentas.com"}
+  ])
+  
+
+
+
+  //////////////////////////////////////FUNCTIONS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
   useEffect(()=>{
     Aos.init({duration: 2000});
   },[]);
@@ -22,6 +46,26 @@ function App() {
     setMenu(!menu)
   }
 
+  ///////Mudar foco do portifolio
+  const [portifolioAtual, setPortifolioAtual] = useState({
+    nome:"Blue Wizard",
+    descricao:"Apresentamos Blue Wizard, uma ferramenta que tem proporcionado inovação e crescimento a diversos negócios, mesmo em meio a desafios. Com recursos avançados, este sistema oferece automação de vendas em diferentes plataformas e centraliza dados estratégicos de marketing. Além disso, a funcionalidade de dropshipping facilita a oferta de produtos diversificados sem a necessidade de estoque, adaptando-se às demandas do mercado de maneira eficiente. Descubra como Blue Wizard tem contribuído para a evolução de negócios, oferecendo soluções práticas e inovadoras.",
+    tecnologias: ["React", "Python", "MySQL", "MongoDB"],
+    fontColor:"white",
+    backgroundImg:"./style/contents/images/conhecimentos/React.jpg", 
+    backgroundColor:"blue",
+    link:""
+  })
+  function handlePortifolio(nome) {
+    const projetoSelecionado = projetos.find((projeto) => projeto.nome === nome);
+  
+    // Verifica se o projeto selecionado é diferente do projeto atual
+    if (projetoSelecionado && projetoSelecionado.nome !== portifolioAtual.nome) {
+      setPortifolioAtual(projetoSelecionado);
+      console.log(portifolioAtual)
+    }
+  }
+  
 
   return (
     <div className="appBody">
@@ -103,20 +147,28 @@ function App() {
         
 
       </div> */}
-      <div style={{marginTop: "10vh", marginBottom: "20vh",width: "80%" , height: "60vh", backgroundColor: "white", borderRadius: "20px", display:"flex",flexWrap: "wrap", flexDirection: "row", justifyContent: "space-between"}}>
-        <div style={{width: "50.5%", height: "60vh", border:"1px solid black", display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"space-around"}}>
-          <div style={{}}><h2 style={{fontSize:"3.5rem"}}>Matheus Moura</h2></div>
-          <div><h3 style={{fontSize:"3rem", fontWeight:"lighter"}}>Projeto</h3></div>
-          <div><p style={{fontSize:"2rem", fontWeight:"lighter"}}>Descrição</p></div>
-          <div><p style={{fontSize:"1.8rem"}}>Tecnologia</p></div>
+      <div style={{marginTop: "10vh", marginBottom: "20vh",width: "80%" , height: "60vh", borderRadius: "20px", display:"flex",flexWrap: "wrap", flexDirection: "row", justifyContent: "space-between", backgroundImage: `url(${portifolioAtual.backgroundImg})`, backgroundSize: "cover", backgroundPosition: "center"}}>
+        <div style={{width: "55%", height: "60vh", margin: "0 1.9vw", display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"space-around"}}>
+
+          <div style={{}}><h2 style={{fontSize:"3.5rem", color:portifolioAtual.fontColor}}>Matheus Moura</h2></div>
+          <div><h3 style={{fontSize:"3rem", fontWeight:"lighter", color:portifolioAtual.fontColor}}>{portifolioAtual.nome}</h3></div>
+          <div style={{padding: "0 15px"}}><p style={{fontSize:"1.6rem", fontWeight:"lighter", textAlign:"justify", color:portifolioAtual.fontColor}}>{portifolioAtual.descricao}</p></div>
+          <div style={{width:"100%", textAlign:"center", display:"flex", justifyContent:"center", color:portifolioAtual.fontColor}}>{portifolioAtual.tecnologias.map((element, index) => 
+            <p key={index} style={{ fontSize:"1.8rem", padding:"0 5px", color:portifolioAtual.fontColor}}>{element}</p>
+          )} </div>
+
         </div>
-        <div style={{width: "49%", height: "60vh", maxHeight: "60vh", border:"1px solid black", display:"flex", alignItems:"center", justifyContent:"flex-start", flexDirection: "column", overflowY:"auto"}}>
+
+
+        <div style={{width: "40%", height: "60vh", maxHeight: "60vh", display:"flex", alignItems:"center", justifyContent:"flex-start", flexDirection: "column", overflowY:"auto"}}>
+
+          <div nome="Blue Wizard" onClick={()=>handlePortifolio("Blue Wizard")} style={{marginTop: "20px",width: "50%", height: "20vh", minHeight:"20vh", border: "1px solid black"}}></div>
+          <div nome="Brasil Luvas" onClick={()=>handlePortifolio("Brasil Luvas")} style={{marginTop: "20px",width: "50%", height: "20vh", minHeight:"20vh", border: "1px solid black"}}></div>
           <div style={{marginTop: "20px",width: "50%", height: "20vh", minHeight:"20vh", border: "1px solid black"}}></div>
           <div style={{marginTop: "20px",width: "50%", height: "20vh", minHeight:"20vh", border: "1px solid black"}}></div>
           <div style={{marginTop: "20px",width: "50%", height: "20vh", minHeight:"20vh", border: "1px solid black"}}></div>
           <div style={{marginTop: "20px",width: "50%", height: "20vh", minHeight:"20vh", border: "1px solid black"}}></div>
-          <div style={{marginTop: "20px",width: "50%", height: "20vh", minHeight:"20vh", border: "1px solid black"}}></div>
-          <div style={{marginTop: "20px",width: "50%", height: "20vh", minHeight:"20vh", border: "1px solid black"}}></div>
+
         </div>    
       </div>
 

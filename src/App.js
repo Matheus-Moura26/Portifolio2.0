@@ -149,7 +149,7 @@ function App() {
             <SwiperSlide>
               <div className="habilidadesBody" style={{display:"flex", flexDirection:"column", justifyContent:"center"}}>
                 {/* //PRIMEIRA FILA */}
-                <div style={{margin:"2.5px 0", width:"20%", display:"flex", alignItems:"center", justifyContent:"center"}}>
+                <div style={{margin:"2.5px 0", width:"100%", display:"flex", alignItems:"center", justifyContent:"center"}}>
                   <div style={{margin:"0 10px",border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px", textAlign:"center"}}>
                     <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>HTML</p>
                   </div>
@@ -158,7 +158,7 @@ function App() {
                   </div>
                 </div>
                 {/*//SEGUNDA FILA */}
-                <div style={{margin:"2.5px 0", width:"30%", display:"flex", alignItems:"center", justifyContent:"center"}}>
+                <div style={{margin:"2.5px 0", width:"100%", display:"flex", alignItems:"center", justifyContent:"center"}}>
                   <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px", textAlign:"center"}}>
                     <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Javascript</p>
                   </div>
@@ -167,6 +167,84 @@ function App() {
                   </div>
                   <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
                     <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Hooks</p>
+                  </div>
+                </div>
+                {/*//TERCEIRA FILA */}
+                <div style={{margin:"2.5px 0", width:"100%", display:"flex", alignItems:"center", justifyContent:"center"}}>
+                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px", textAlign:"center"}}>
+                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Git</p>
+                  </div>
+                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
+                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>GitHub</p>
+                  </div>
+                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
+                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>HTTP</p>
+                  </div>
+                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
+                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Node.js</p>
+                  </div>
+                </div>
+                {/*//QUARTA FILA */}
+                <div style={{margin:"2.5px 0", width:"100%", display:"flex", alignItems:"center", justifyContent:"center"}}>
+                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px", textAlign:"center"}}>
+                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Python</p>
+                  </div>
+                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
+                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Express</p>
+                  </div>
+                  <div style={{margin:"0 10px", border:"1px solid black", width:"130px", height:"20px", borderRadius:" 20px"}}>
+                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Prisma ORM</p>
+                  </div>
+                  <div style={{margin:"0 10px", border:"1px solid black", width:"120px", height:"20px", borderRadius:" 20px"}}>
+                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Mongoose</p>
+                  </div>
+                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
+                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Express</p>
+                  </div>
+                </div>
+                {/*//QUINTA FILA */}
+                <div style={{margin:"2.5px 0", width:"100%", display:"flex", alignItems:"center", justifyContent:"center"}}>
+                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px", textAlign:"center"}}>
+                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Django</p>
+                  </div>
+                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
+                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Flask</p>
+                  </div>
+                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
+                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Flask</p>
+                  </div>
+                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
+                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>SQL</p>
+                  </div>
+                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
+                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>NoSQL</p>
+                  </div>
+                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
+                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>MySQL</p>
+                  </div>
+                </div>
+                {/*//SEXTA FILA */}
+                <div style={{margin:"2.5px 0", width:"100%", display:"flex", alignItems:"center", justifyContent:"center"}}>
+                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px", textAlign:"center"}}>
+                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>MongoDB</p>
+                  </div>
+                  <div style={{margin:"0 10px", border:"1px solid black", width:"160px", height:"20px", borderRadius:" 20px"}}>
+                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>API Restful</p>
+                  </div>
+                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
+                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Flask</p>
+                  </div>
+                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
+                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>SQL</p>
+                  </div>
+                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
+                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>NoSQL</p>
+                  </div>
+                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
+                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>MySQL</p>
+                  </div>
+                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
+                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>MySQL</p>
                   </div>
                 </div>
               </div>

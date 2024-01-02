@@ -400,28 +400,31 @@ h1{
         transition: background-image 0.5s ease;
         
     }
-    .bkgERP{
-        background-image: url("../contents/images/projetos/ERP.PNG");
-        background-Size: contain;
-        background-Position: center;
-        background-repeat: no-repeat;
-        background-color: rgb(1, 1, 63);
+    .projetosBody::-webkit-scrollbar{
+        display: none;
     }
-    .filtro20px{
-    
-        opacity: 0;
-    }
-    .filtro20px:hover{
-        opacity: 1;
-    }
-    .bkgBrasilLuvas{
-        background-image: url("../contents/images/projetos/brasilLuvas.PNG");
-        background-Size: contain;
-        background-Position: center;
-        background-repeat: no-repeat;
-        background-color: rgb(1, 1, 63);
-        backdrop-filter: blur(20px);
-    }
+        .bkgERP{
+            background-image: url("../contents/images/projetos/ERP.PNG");
+            background-Size: contain;
+            background-Position: center;
+            background-repeat: no-repeat;
+            background-color: rgb(1, 1, 63);
+        }
+        .bkgBrasilLuvas{
+            background-image: url("../contents/images/projetos/brasilLuvas.PNG");
+            background-Size: contain;
+            background-Position: center;
+            background-repeat: no-repeat;
+            background-color: rgb(1, 1, 63);
+            backdrop-filter: blur(20px);
+        }
+        .filtro20px{
+        
+            opacity: 0;
+        }
+        .filtro20px:hover{
+            opacity: 1;
+        }
         
 
         @media (max-width: 500px){

@@ -60,10 +60,13 @@ function App() {
     const projetoSelecionado = projetos.find((projeto) => projeto.nome === nome);
   
     // Verifica se o projeto selecionado é diferente do projeto atual
-    if (projetoSelecionado && projetoSelecionado.nome !== portifolioAtual.nome) {
       setPortifolioAtual(projetoSelecionado);
-      console.log(portifolioAtual)
-    }
+  }
+  function letrasPretas(){
+    setPortifolioAtual({...portifolioAtual, fontColor:"black"})
+  }
+  function letrasBrancas(){
+    setPortifolioAtual({...portifolioAtual, fontColor:"white"})
   }
 
   const [classe, setClasse] = useState("classe1")
@@ -176,7 +179,7 @@ function App() {
         </div>
 
 
-        <div style={{width: "40%", height: "60vh", maxHeight: "60vh", display:"flex", alignItems:"center", justifyContent:"flex-start", flexDirection: "column", overflowY:"auto"}}>
+        <div className="projetosBody" style={{width: "40%", height: "60vh", maxHeight: "60vh", display:"flex", alignItems:"center", justifyContent:"flex-start", flexDirection: "column", overflowY:"auto"}}>
 
           <div className="bkgERP" nome="Blue Wizard" onClick={()=>{handlePortifolio("Blue Wizard"); handleBackground("classe1")}} style={{marginTop: "20px",width: "60%", height: "20vh", minHeight:"20vh", border: "1px solid black", cursor:"pointer", display:"flex", alignItems:"center", justifyContent:"center", position:"relative"}}>
             <div className="filtro20px" style={{backdropFilter:"blur(10px)", width: "100%", height: "20vh", minHeight:"20vh"}}></div>
@@ -186,9 +189,9 @@ function App() {
             <div className="filtro20px" style={{backdropFilter:"blur(10px)", width: "100%", height: "20vh", minHeight:"20vh"}}></div>
              <h2 style={{color: "black", fontSize:"1.9rem", position:"absolute", pointerEvents:"none"}}>Brasil Luvas</h2>
           </div>
-          <div onClick={()=>{ handleBackground("classe3")}} style={{marginTop: "20px",width: "60%", height: "20vh", minHeight:"20vh", border: "1px solid black", cursor:"pointer"}}></div>
-          <div onClick={()=>{ handleBackground("classe4")}} style={{marginTop: "20px",width: "60%", height: "20vh", minHeight:"20vh", border: "1px solid black", cursor:"pointer"}}></div>
-          <div onClick={()=>{ handleBackground("classe5")}} style={{marginTop: "20px",width: "60%", height: "20vh", minHeight:"20vh", border: "1px solid black", cursor:"pointer"}}></div>
+          <div onClick={()=>{ letrasPretas(); handleBackground("classe3")}} style={{marginTop: "20px",width: "60%", height: "20vh", minHeight:"20vh", border: "1px solid black", cursor:"pointer"}}></div>
+          <div onClick={()=>{ letrasBrancas();handleBackground("classe4")}} style={{marginTop: "20px",width: "60%", height: "20vh", minHeight:"20vh", border: "1px solid black", cursor:"pointer"}}></div>
+          <div onClick={()=>{ handleBackground("classe5")}} style={{marginTop: "20px", marginBottom: "20px",width: "60%", height: "20vh", minHeight:"20vh", border: "1px solid black", cursor:"pointer"}}></div>
           
         </div>    
       </div>

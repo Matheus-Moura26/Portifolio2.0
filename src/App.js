@@ -184,6 +184,7 @@ function App() {
                     <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Node.js</p>
                   </div>
                 </div>
+                <div style={{width:"98%", borderBottom:"1px solid blue"}}></div>
                 {/*//QUARTA FILA */}
                 <div style={{margin:"2.5px 0", width:"100%", display:"flex", alignItems:"center", justifyContent:"center"}}>
                   <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px", textAlign:"center"}}>
@@ -201,12 +202,12 @@ function App() {
                   <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
                     <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Express</p>
                   </div>
-                </div>
-                {/*//QUINTA FILA */}
-                <div style={{margin:"2.5px 0", width:"100%", display:"flex", alignItems:"center", justifyContent:"center"}}>
                   <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px", textAlign:"center"}}>
                     <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Django</p>
                   </div>
+                </div>
+                {/*//QUINTA FILA */}
+                <div style={{margin:"2.5px 0", width:"100%", display:"flex", alignItems:"center", justifyContent:"center"}}>
                   <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
                     <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Flask</p>
                   </div>
@@ -222,29 +223,68 @@ function App() {
                   <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
                     <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>MySQL</p>
                   </div>
-                </div>
-                {/*//SEXTA FILA */}
-                <div style={{margin:"2.5px 0", width:"100%", display:"flex", alignItems:"center", justifyContent:"center"}}>
                   <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px", textAlign:"center"}}>
                     <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>MongoDB</p>
                   </div>
-                  <div style={{margin:"0 10px", border:"1px solid black", width:"160px", height:"20px", borderRadius:" 20px"}}>
+                  <div style={{margin:"0 10px", border:"1px solid black", width:"110px", height:"20px", borderRadius:" 20px"}}>
                     <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>API Restful</p>
                   </div>
-                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
-                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Flask</p>
+                </div>
+                {/*//SEXTA FILA */}
+                <div style={{margin:"2.5px 0", width:"85%", display:"flex", alignItems:"center", justifyContent:"center"}}>
+                  <div style={{margin:"0 10px", border:"1px solid black", width:"120px", height:"20px", borderRadius:" 20px"}}>
+                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>ELastic Searchk</p>
                   </div>
                   <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
-                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>SQL</p>
+                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Docker</p>
                   </div>
                   <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
-                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>NoSQL</p>
+                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Kubernetes</p>
                   </div>
                   <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
-                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>MySQL</p>
+                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Web Services</p>
                   </div>
                   <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
-                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>MySQL</p>
+                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Apache</p>
+                  </div>
+                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px", textAlign:"center"}}>
+                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>AWS</p>
+                  </div>
+                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px", textAlign:"center"}}>
+                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Kafka</p>
+                  </div>
+                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
+                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>POO</p>
+                  </div>
+                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
+                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Serveless</p>
+                  </div>
+                </div>
+                {/*//SETIMA FILA */}
+                <div style={{margin:"2.5px 0", width:"100%", display:"flex", alignItems:"center", justifyContent:"center"}}>
+                  <div style={{margin:"0 10px", border:"1px solid black", width:"160px", height:"20px", borderRadius:" 20px"}}>
+                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Arquitetura de software</p>
+                  </div>
+                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
+                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Monolito</p>
+                  </div>
+                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
+                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Mircroserviços</p>
+                  </div>
+                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
+                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Singleton</p>
+                  </div>
+                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px", textAlign:"center"}}>
+                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Oauth</p>
+                  </div>
+                  <div style={{margin:"0 10px", border:"1px solid black", width:"145px", height:"20px", borderRadius:" 20px", textAlign:"center"}}>
+                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Basic Authentication</p>
+                  </div>
+                  <div style={{margin:"0 10px", border:"1px solid black", width:"145px", height:"20px", borderRadius:" 20px", textAlign:"center"}}>
+                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Token Authentication</p>
+                  </div>
+                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
+                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Testes Unitarios</p>
                   </div>
                 </div>
               </div>

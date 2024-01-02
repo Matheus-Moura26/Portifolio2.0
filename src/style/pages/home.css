@@ -411,3 +411,13 @@ h1{
                 width: 100%;
             }
         }
+
+
+.classe2{
+    background-image: url("../contents/images/conhecimentos/React.jpg");
+    transition: background-image 0.5s ease;
+}
+.classe1{
+    background-image: url("../contents/images/conhecimentos/teste.jpg");
+    transition: background-image 0.5s ease;
+}

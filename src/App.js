@@ -155,12 +155,23 @@ function App() {
       <div className={classe} style={{marginTop: "10vh", marginBottom: "20vh",width: "80%" , height: "60vh", borderRadius: "20px", display:"flex",flexWrap: "wrap", flexDirection: "row", justifyContent: "space-between", backgroundSize: "cover", backgroundPosition: "center"}}>
         <div style={{width: "55%", height: "60vh", margin: "0 1.9vw", display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"space-around"}} >
 
-          <div style={{}}><h2 style={{fontSize:"3.5rem", color:portifolioAtual.fontColor}}>Matheus Moura</h2></div>
-          <div><h3 style={{fontSize:"3rem", fontWeight:"lighter", color:portifolioAtual.fontColor}}>{portifolioAtual.nome}</h3></div>
-          <div style={{padding: "0 15px"}}><p style={{fontSize:"1.6rem", fontWeight:"lighter", textAlign:"justify", color:portifolioAtual.fontColor}}>{portifolioAtual.descricao}</p></div>
-          <div style={{width:"100%", textAlign:"center", display:"flex", justifyContent:"center", color:portifolioAtual.fontColor}}>{portifolioAtual.tecnologias.map((element, index) => 
-            <p key={index} style={{ fontSize:"1.8rem", padding:"0 5px", color:portifolioAtual.fontColor}}>{element}</p>
-          )} </div>
+          <div style={{}}>
+            <h2 style={{fontSize:"3.5rem", color:portifolioAtual.fontColor}}>Matheus Moura</h2>
+          </div>
+
+          <div>
+            <h3 style={{fontSize:"3rem", fontWeight:"lighter", color:portifolioAtual.fontColor}}>{portifolioAtual.nome}</h3>
+          </div>
+
+          <div style={{padding: "0 15px"}}>
+            <p style={{fontSize:"1.7rem", fontWeight:"lighter", textAlign:"justify", color:portifolioAtual.fontColor}}>{portifolioAtual.descricao}</p>
+          </div>
+
+          <div style={{width:"100%", textAlign:"center", display:"flex", justifyContent:"center", color:portifolioAtual.fontColor}}>
+            {portifolioAtual.tecnologias.map((element, index) => 
+              <p key={index} style={{ fontSize:"1.8rem", padding:"0 5px", color:portifolioAtual.fontColor}}>{element}</p>
+            )} 
+          </div>
 
         </div>
 

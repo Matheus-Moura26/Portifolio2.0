@@ -37,13 +37,18 @@ function App() {
   const habilidades = [
     ["HTML", "CSS"],
     ["Javascript", "React", "Hooks"],
-    ["Git", "GitHub", "HTTP", "Node.js"],
-    ["Python", "Express", "Prisma ORM", "Mongoose", "Express", "Django"],
-    ["Flask", "Flask", "SQL", "NoSQL", "MySQL", "MongoDB", "API Restful"],
-    ["ELastic Searchk", "Docker", "Kubernetes", "Web Services", "Apache", "AWS", "Kafka", "POO", "Serveless"],
-    ["Arquitetura de software", "Monolito", "Mircroserviços", "Singleton", "Oauth", "Basic Authentication", "Token Authentication", "Testes Unitarios"]
+    ["Git", "GitHub", "HTTP", "Node.js","Python"],
+    ["Express", "Prisma ORM", "Mongoose", "Express", "Django", "API Restful"],
+    ["Flask", "Flask", "SQL", "NoSQL", "MySQL", "MongoDB","ELastic Searchk","Docker"],
+    ["Kubernetes", "Web Services", "Apache", "AWS", "Kafka", "POO"],
+    ["Arquitetura de software", "Serveless", "Monolito", "Mircroserviços","Singleton"],
+    ["Oauth", "Basic Authentication", "Token Authentication", "Testes Unitarios"]
   ];
-
+  const descricaoHabilidades = [
+    "HTML é uma linguagem de marcação...",
+    "CSS é uma linguagem de estilo...",
+    // Adicione descrições para as outras habilidades
+  ];
 
   //////////////////////////////////////FUNCTIONS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
   useEffect(()=>{
@@ -86,10 +91,13 @@ function App() {
   //////////////////// Aumentar tamanho do card da tecnologia ///////////////////////
   const [expandido, setExpandido] = useState({});
 
-  const handleCardClick = (row, index) => {
+  const handleCardClick = (row, index, descricao) => {
     setExpandido((prevExpandido) => ({
       ...prevExpandido,
-      [`${row}-${index}`]: !prevExpandido[`${row}-${index}`],
+      [`${row}-${index}`]: {
+        expandido: !prevExpandido[`${row}-${index}`]?.expandido,
+        descricao,
+      },
     }));
   };
   
@@ -167,30 +175,30 @@ function App() {
           </div>
             </SwiperSlide>
             <SwiperSlide>
-            <div className="habilidadesBody" style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
+              <div className="habilidadesBody" style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
               {habilidades.map((row, rowIndex) => (
                 <div key={rowIndex} style={{ margin: "2.5px 0", width: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
                   {row.map((card, index) => (
                     <div
                       key={index}
-                      onClick={() => handleCardClick(rowIndex, index)}
+                      onClick={() => handleCardClick(rowIndex, index, descricaoHabilidades[index])}
                       style={{
                         margin: "0 10px",
                         border: "1px solid black",
-                        width: expandido[`${rowIndex}-${index}`] ? "120px" : "100px",
-                        height: expandido[`${rowIndex}-${index}`] ? "60px" : "20px",
+                        width: expandido[`${rowIndex}-${index}`]?.expandido ? "120px" : "100px",
+                        height: expandido[`${rowIndex}-${index}`]?.expandido ? "60px" : "20px",
                         borderRadius: "20px",
                         textAlign: "center",
                         transition: "width 0.3s ease-in-out, height 0.3s ease-in-out",
                       }}
                     >
                       <p style={{ margin: "0", fontSize: "1.5rem", textAlign: "center" }}>{card}</p>
-                      {expandido[`${rowIndex}-${index}`] && <p style={{ display: "block" }}>Descrição</p>}
+                      {expandido[`${rowIndex}-${index}`]?.expandido && <p style={{ display: "block" }}>{expandido[`${rowIndex}-${index}`]?.descricao}</p>}
                     </div>
                   ))}
                 </div>
               ))}
-    </div>
+              </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="habilidadesBody">

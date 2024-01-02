@@ -147,8 +147,28 @@ function App() {
           </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="habilidadesBody">
-                TODAS AS TECNOLOGIAS
+              <div className="habilidadesBody" style={{display:"flex", flexDirection:"column", justifyContent:"center"}}>
+                {/* //PRIMEIRA FILA */}
+                <div style={{margin:"2.5px 0", width:"20%", display:"flex", alignItems:"center", justifyContent:"center"}}>
+                  <div style={{margin:"0 10px",border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px", textAlign:"center"}}>
+                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>HTML</p>
+                  </div>
+                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
+                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>CSS</p>
+                  </div>
+                </div>
+                {/*//SEGUNDA FILA */}
+                <div style={{margin:"2.5px 0", width:"30%", display:"flex", alignItems:"center", justifyContent:"center"}}>
+                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px", textAlign:"center"}}>
+                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Javascript</p>
+                  </div>
+                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
+                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>React</p>
+                  </div>
+                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
+                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Hooks</p>
+                  </div>
+                </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>

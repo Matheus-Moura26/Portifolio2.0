@@ -427,8 +427,44 @@ h1{
             opacity: 1;
         }
 
-        /* /////////// MOVIMENTO DA AGUA //////////// */
+        /* /////////// Zoom das tecnologias //////////// */
         
+         
+          .habilidadeCard {
+            margin: 2.5px;
+            border: 1px solid black;
+            width: 155px;
+            height: 20px;
+            border-radius: 20px;
+            text-align: center;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.3s ease-in-out;
+          }
+          
+          .habilidadeCard p {
+            margin: 0;
+            font-size: 1.5rem;
+            text-align: center;
+          }
+          
+          .habilidadeCard.expanded {
+            z-index: 2;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 200px;
+            height: 200px;
+            backdrop-filter: blur(5px);
+          }
+          
+          .habilidadeCard.expanded p.description {
+            display: block;
+          }
+
+        
+          
     
 
 

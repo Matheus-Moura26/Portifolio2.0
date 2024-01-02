@@ -34,21 +34,64 @@ function App() {
   ])
   
 
-  const habilidades = [
-    ["HTML", "CSS"],
-    ["Javascript", "React", "Hooks"],
-    ["Git", "GitHub", "HTTP", "Node.js","Python"],
-    ["Express", "Prisma ORM", "Mongoose", "Express", "Django", "API Restful"],
-    ["Flask", "Flask", "SQL", "NoSQL", "MySQL", "MongoDB","ELastic Searchk","Docker"],
-    ["Kubernetes", "Web Services", "Apache", "AWS", "Kafka", "POO"],
-    ["Arquitetura de software", "Serveless", "Monolito", "Mircroserviços","Singleton"],
-    ["Oauth", "Basic Authentication", "Token Authentication", "Testes Unitarios"]
-  ];
-  const descricaoHabilidades = [
-    "HTML é uma linguagem de marcação...",
-    "CSS é uma linguagem de estilo...",
-    // Adicione descrições para as outras habilidades
-  ];
+  const technologiesData = [
+    [
+      { name: 'HTML', description: 'Linguagem de marcação para documentos web.' },
+      { name: 'CSS', description: 'Linguagem de estilo para documentos web.' },
+    ],
+    [
+      { name: 'Javascript', description: 'Linguagem de programação de alto nível.' },
+      { name: 'React', description: 'Biblioteca JavaScript para construção de interfaces de usuário.' },
+      { name: 'Hooks', description: 'Funções especiais no React que permitem o uso de state e outras funcionalidades em componentes funcionais.' },
+    ],
+    [
+      { name: 'Git', description: 'Sistema de controle de versão distribuído.' },
+      { name: 'GitHub', description: 'Plataforma de hospedagem de código-fonte e colaboração.' },
+      { name: 'HTTP', description: 'Protocolo de transferência de hipertexto para comunicação na World Wide Web.' },
+      { name: 'Node.js', description: 'Ambiente de execução para JavaScript fora do navegador.' },
+      { name: 'Python', description: 'Linguagem de programação de alto nível.' },
+    ],
+    [
+      { name: 'Express', description: 'Framework para construção de aplicativos web com Node.js.' },
+      { name: 'Prisma ORM', description: 'Ferramenta de mapeamento objeto-relacional (ORM) para Node.js e TypeScript.' },
+      { name: 'Mongoose', description: 'Biblioteca de modelagem de objetos MongoDB para Node.js.' },
+      { name: 'Express', description: 'Framework web de alto nível em Python que incentiva o desenvolvimento rápido e limpo.' },
+      { name: 'Django', description: 'Framework web de alto nível em Python que incentiva o desenvolvimento rápido e limpo.' },
+      { name: 'API Restful', description: 'Arquitetura de serviços web baseada em REST (Representational State Transfer).' },
+    ],
+    [
+      { name: 'Flask', description: 'Framework web leve em Python.' },
+      { name: 'Flask', description: 'Framework web leve em Python.' },
+      { name: 'SQL', description: 'Linguagem de consulta estruturada para gerenciamento de banco de dados.' },
+      { name: 'NoSQL', description: 'Abordagem de design de banco de dados para dados não relacionais.' },
+      { name: 'MySQL', description: 'Sistema de gerenciamento de banco de dados relacional.' },
+      { name: 'MongoDB', description: 'Banco de dados NoSQL orientado a documentos.' },
+      { name: 'ELastic Searchk', description: 'Motor de busca e análise de dados.' },
+      { name: 'Docker', description: 'Plataforma para desenvolvimento, envio e execução de aplicativos em contêineres.' },
+    ],
+    [
+      { name: 'Kubernetes', description: 'Orquestrador de contêineres de código aberto para automação de implementação, dimensionamento e operações de aplicativos em contêineres.' },
+      { name: 'Web Services', description: 'Conjunto de padrões para implementação de serviços na web.' },
+      { name: 'Apache', description: 'Servidor web de código aberto.' },
+      { name: 'AWS', description: 'Amazon Web Services - Plataforma de serviços em nuvem.' },
+      { name: 'Kafka', description: 'Plataforma distribuída de streaming de eventos.' },
+      { name: 'POO', description: 'Programação Orientada a Objetos - Paradigma de programação.' },
+    ],
+    [
+      { name: 'Arquitetura de software', description: 'Design e estrutura de sistemas de software.' },
+      { name: 'Serveless', description: 'Modelo de execução de computação em nuvem onde o provedor gerencia a infraestrutura automaticamente.' },
+      { name: 'Monolito', description: 'Arquitetura de software em que um aplicativo é construído como uma única unidade.' },
+      { name: 'Mircroserviços', description: 'Abordagem arquitetônica para desenvolvimento de software em que um aplicativo é composto por pequenos serviços independentes.' },
+      { name: 'Singleton', description: 'Padrão de design que garante que uma classe tenha apenas uma instância e fornece um ponto global de acesso a ela.' },
+    ],
+    [
+      { name: 'Oauth', description: 'Protocolo de autorização aberto que permite a autenticação segura de um usuário.' },
+      { name: 'Basic Authentication', description: 'Método simples de autenticação usando um nome de usuário e uma senha.' },
+      { name: 'Token Authentication', description: 'Método de autenticação usando tokens.' },
+      { name: 'Testes Unitarios', description: 'Prática de teste de unidades individuais de código-fonte.' },
+    ]
+  ]
+
 
   //////////////////////////////////////FUNCTIONS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
   useEffect(()=>{
@@ -89,17 +132,20 @@ function App() {
   }
 
   //////////////////// Aumentar tamanho do card da tecnologia ///////////////////////
-  const [expandido, setExpandido] = useState({});
 
-  const handleCardClick = (row, index, descricao) => {
-    setExpandido((prevExpandido) => ({
-      ...prevExpandido,
-      [`${row}-${index}`]: {
-        expandido: !prevExpandido[`${row}-${index}`]?.expandido,
-        descricao,
-      },
-    }));
-  };
+    const [expandedCard, setExpandedCard] = useState(null);
+  
+    const handleCardClick = (rowIndex, index) => {
+      if (expandedCard === null || expandedCard.rowIndex !== rowIndex || expandedCard.index !== index) {
+        setExpandedCard({ rowIndex, index });
+      } else {
+        setExpandedCard(null);
+      }
+    };
+  
+    const isCardExpanded = (rowIndex, index) => expandedCard !== null && expandedCard.rowIndex === rowIndex && expandedCard.index === index;
+  
+  
   
   
 
@@ -175,30 +221,22 @@ function App() {
           </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="habilidadesBody" style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
-              {habilidades.map((row, rowIndex) => (
-                <div key={rowIndex} style={{ margin: "2.5px 0", width: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                  {row.map((card, index) => (
-                    <div
-                      key={index}
-                      onClick={() => handleCardClick(rowIndex, index, descricaoHabilidades[index])}
-                      style={{
-                        margin: "0 10px",
-                        border: "1px solid black",
-                        width: expandido[`${rowIndex}-${index}`]?.expandido ? "120px" : "100px",
-                        height: expandido[`${rowIndex}-${index}`]?.expandido ? "60px" : "20px",
-                        borderRadius: "20px",
-                        textAlign: "center",
-                        transition: "width 0.3s ease-in-out, height 0.3s ease-in-out",
-                      }}
-                    >
-                      <p style={{ margin: "0", fontSize: "1.5rem", textAlign: "center" }}>{card}</p>
-                      {expandido[`${rowIndex}-${index}`]?.expandido && <p style={{ display: "block" }}>{expandido[`${rowIndex}-${index}`]?.descricao}</p>}
-                    </div>
-                  ))}
-                </div>
-              ))}
+            <div className="habilidadesBody" style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
+            {technologiesData.map((row, rowIndex) => (
+              <div key={rowIndex} style={{ margin: "2.5px 0", width: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                {row.map((tech, index) => (
+                  <div
+                    key={index}
+                    className={`habilidadeCard ${isCardExpanded(rowIndex, index) ? 'expanded' : ''}`}
+                    onClick={() => handleCardClick(rowIndex, index)}
+                  >
+                    <p>{tech.name}</p>
+                    {isCardExpanded(rowIndex, index) && <p className="description">{tech.description}</p>}
+                  </div>
+                ))}
               </div>
+            ))}
+          </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="habilidadesBody">

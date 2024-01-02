@@ -221,26 +221,21 @@ function App() {
           </div>
             </SwiperSlide>
             <SwiperSlide>
-            <div className="habilidadesBody" style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
-            {technologiesData.map((row, rowIndex) => (
-              <div key={rowIndex} style={{ margin: "2.5px 0", width: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                {row.map((tech, index) => (
-                  <div
-                    key={index}
-                    className={`habilidadeCard ${isCardExpanded(rowIndex, index) ? 'expanded' : ''}`}
-                    onClick={() => handleCardClick(rowIndex, index)}
-                  >
-                    <p>{tech.name}</p>
-                    {isCardExpanded(rowIndex, index) && <p className="description">{tech.description}</p>}
+              <div className="habilidadesBody" style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
+                {technologiesData.map((row, rowIndex) => (
+                  <div key={rowIndex} style={{ margin: "2.5px 0", width: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                    {row.map((tech, index) => (
+                      <div
+                        key={index}
+                        className={`habilidadeCard ${isCardExpanded(rowIndex, index) ? 'expanded' : ''}`}
+                        onClick={() => handleCardClick(rowIndex, index)}
+                      >
+                        <p>{tech.name}</p>
+                        {isCardExpanded(rowIndex, index) && <p className="description">{tech.description}</p>}
+                      </div>
+                    ))}
                   </div>
                 ))}
-              </div>
-            ))}
-          </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="habilidadesBody">
-                ECONOMIA, INDICES
               </div>
             </SwiperSlide>
       </Swiper>

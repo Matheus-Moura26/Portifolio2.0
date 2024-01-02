@@ -439,7 +439,7 @@ h1{
             text-align: center;
             cursor: pointer;
             position: relative;
-            transition: all 0.3s ease-in-out;
+            transition: all 1000ms ease-out;
           }
           
           .habilidadeCard p {

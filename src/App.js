@@ -119,7 +119,7 @@ function App() {
       <div className="textoAnimado1Body">
         <span></span>
       </div>
-      <div style={{width: "100%", height: "5vh", marginTop: "85vh", display: "flex", alignItems: "center", justifyContent: "center", textAlign: "center"}}>
+      <div style={{width: "100%", height: "5svh", marginTop: "85svh", display: "flex", alignItems: "center", justifyContent: "center", textAlign: "center"}}>
       <h2 style={{ color: "white", width: "100%" }}></h2>
       </div>
       
@@ -172,8 +172,8 @@ function App() {
         
 
       </div> */}
-      <div className={classe} style={{marginTop: "10vh", marginBottom: "20vh",width: "80%" , height: "60vh", borderRadius: "20px", display:"flex",flexWrap: "wrap", flexDirection: "row", justifyContent: "space-between", backgroundSize: "cover", backgroundPosition: "center"}}>
-        <div style={{width: "55%", height: "60vh", margin: "0 1.9vw", display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"space-around"}} >
+      <div className={classe} style={{marginTop: "10svh", marginBottom: "20svh",width: "80%" , height: "60svh", borderRadius: "20px", display:"flex",flexWrap: "wrap", flexDirection: "row", justifyContent: "space-between", backgroundSize: "cover", backgroundPosition: "center"}}>
+        <div style={{width: "55%", height: "60svh", margin: "0 1.9vw", display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"space-around"}} >
 
           <div style={{}}>
             <h2 style={{fontSize:"3.5rem", color:portifolioAtual.fontColor}}>Matheus Moura</h2>
@@ -196,19 +196,19 @@ function App() {
         </div>
 
 
-        <div className="projetosBody" style={{width: "40%", height: "60vh", maxHeight: "60vh", display:"flex", alignItems:"center", justifyContent:"flex-start", flexDirection: "column", overflowY:"auto"}}>
+        <div className="projetosBody" style={{width: "40%", height: "60svh", maxHeight: "60svh", display:"flex", alignItems:"center", justifyContent:"flex-start", flexDirection: "column", overflowY:"auto"}}>
 
-          <div className="bkgERP" nome="Blue Wizard" onClick={()=>{handlePortifolio("Blue Wizard"); handleBackground("classe1")}} style={{marginTop: "20px",width: "60%", height: "20vh", minHeight:"20vh", border: "1px solid black", cursor:"pointer", display:"flex", alignItems:"center", justifyContent:"center", position:"relative"}}>
-            <div className="filtro20px" style={{backdropFilter:"blur(10px)", width: "100%", height: "20vh", minHeight:"20vh"}}></div>
+          <div className="bkgERP" nome="Blue Wizard" onClick={()=>{handlePortifolio("Blue Wizard"); handleBackground("classe1")}} style={{marginTop: "20px",width: "60%", height: "20svh", minHeight:"20svh", border: "1px solid black", cursor:"pointer", display:"flex", alignItems:"center", justifyContent:"center", position:"relative"}}>
+            <div className="filtro20px" style={{backdropFilter:"blur(10px)", width: "100%", height: "20svh", minHeight:"20svh"}}></div>
             <h2 style={{color: "white", fontSize:"1.9rem", position:"absolute", pointerEvents:"none"}}>Blue Wizard</h2>
           </div>
-          <div className="bkgBrasilLuvas" nome="Brasil Luvas" onClick={()=>{handlePortifolio("Brasil Luvas"); handleBackground("classe2")}} style={{marginTop: "20px",width: "60%", height: "20vh", minHeight:"20vh", border: "1px solid black", cursor:"pointer", display:"flex", alignItems:"center", justifyContent:"center", position:"relative"}}>
-            <div className="filtro20px" style={{backdropFilter:"blur(10px)", width: "100%", height: "20vh", minHeight:"20vh"}}></div>
+          <div className="bkgBrasilLuvas" nome="Brasil Luvas" onClick={()=>{handlePortifolio("Brasil Luvas"); handleBackground("classe2")}} style={{marginTop: "20px",width: "60%", height: "20svh", minHeight:"20svh", border: "1px solid black", cursor:"pointer", display:"flex", alignItems:"center", justifyContent:"center", position:"relative"}}>
+            <div className="filtro20px" style={{backdropFilter:"blur(10px)", width: "100%", height: "20svh", minHeight:"20svh"}}></div>
              <h2 style={{color: "black", fontSize:"1.9rem", position:"absolute", pointerEvents:"none"}}>Brasil Luvas</h2>
           </div>
-          <div onClick={()=>{ letrasPretas(); handleBackground("classe3")}} style={{marginTop: "20px",width: "60%", height: "20vh", minHeight:"20vh", border: "1px solid black", cursor:"pointer"}}></div>
-          <div onClick={()=>{ letrasBrancas();handleBackground("classe4")}} style={{marginTop: "20px",width: "60%", height: "20vh", minHeight:"20vh", border: "1px solid black", cursor:"pointer"}}></div>
-          <div onClick={()=>{ handleBackground("classe5")}} style={{marginTop: "20px", marginBottom: "20px",width: "60%", height: "20vh", minHeight:"20vh", border: "1px solid black", cursor:"pointer"}}></div>
+          <div onClick={()=>{ letrasPretas(); handleBackground("classe3")}} style={{marginTop: "20px",width: "60%", height: "20svh", minHeight:"20svh", border: "1px solid black", cursor:"pointer"}}></div>
+          <div onClick={()=>{ letrasBrancas();handleBackground("classe4")}} style={{marginTop: "20px",width: "60%", height: "20svh", minHeight:"20svh", border: "1px solid black", cursor:"pointer"}}></div>
+          <div onClick={()=>{ handleBackground("classe5")}} style={{marginTop: "20px", marginBottom: "20px",width: "60%", height: "20svh", minHeight:"20svh", border: "1px solid black", cursor:"pointer"}}></div>
           
         </div>    
       </div>

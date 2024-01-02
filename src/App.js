@@ -74,6 +74,7 @@ function App() {
     setClasse(bkg)
   }
   
+  
 
   return (
     <div className="appBody">
@@ -184,9 +185,10 @@ function App() {
                     <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Node.js</p>
                   </div>
                 </div>
-                <div style={{width:"98%", borderBottom:"1px solid blue"}}></div>
+                {/* /// ONDA */}
+                <div className="agua" style={{width:"100%", borderBottom:"1px solid blue", position:"absolute", height:"60svh", backgroundColor:"#03a9f4"}}></div>
                 {/*//QUARTA FILA */}
-                <div style={{margin:"2.5px 0", width:"100%", display:"flex", alignItems:"center", justifyContent:"center"}}>
+                <div style={{marginBlock:"2.5px",marginTop:"10px", width:"100%", display:"flex", alignItems:"center", justifyContent:"center"}}>
                   <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px", textAlign:"center"}}>
                     <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Python</p>
                   </div>
@@ -296,20 +298,8 @@ function App() {
             </SwiperSlide>
       </Swiper>
 
-      {/* <div className="habilidadesImagens">
-        <div className="imagem">
-        <div className="filtro"></div>
-          <h2>React</h2>
-        </div>
 
 
-        <div className="imagem">
-        <div className="filtro"></div>
-          <h2>React</h2>
-        </div>        
-        
-
-      </div> */}
       <div className={classe} style={{marginTop: "10svh", marginBottom: "20svh",width: "80%" , height: "60svh", borderRadius: "20px", display:"flex",flexWrap: "wrap", flexDirection: "row", justifyContent: "space-between", backgroundSize: "cover", backgroundPosition: "center"}}>
         <div style={{width: "55%", height: "60svh", margin: "0 1.9vw", display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"space-around"}} >
 
@@ -321,7 +311,7 @@ function App() {
             <h3 style={{fontSize:"3rem", fontWeight:"lighter", color:portifolioAtual.fontColor}}>{portifolioAtual.nome}</h3>
           </div>
 
-          <div style={{padding: "0 15px"}}>
+          <div style={{padding: "0 15px", height:"147svh"}}>
             <p style={{fontSize:"1.7rem", fontWeight:"lighter", textAlign:"justify", color:portifolioAtual.fontColor}}>{portifolioAtual.descricao}</p>
           </div>
 

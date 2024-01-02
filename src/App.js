@@ -34,6 +34,15 @@ function App() {
   ])
   
 
+  const habilidades = [
+    ["HTML", "CSS"],
+    ["Javascript", "React", "Hooks"],
+    ["Git", "GitHub", "HTTP", "Node.js"],
+    ["Python", "Express", "Prisma ORM", "Mongoose", "Express", "Django"],
+    ["Flask", "Flask", "SQL", "NoSQL", "MySQL", "MongoDB", "API Restful"],
+    ["ELastic Searchk", "Docker", "Kubernetes", "Web Services", "Apache", "AWS", "Kafka", "POO", "Serveless"],
+    ["Arquitetura de software", "Monolito", "Mircroserviços", "Singleton", "Oauth", "Basic Authentication", "Token Authentication", "Testes Unitarios"]
+  ];
 
 
   //////////////////////////////////////FUNCTIONS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -73,6 +82,16 @@ function App() {
   function handleBackground(bkg){
     setClasse(bkg)
   }
+
+  //////////////////// Aumentar tamanho do card da tecnologia ///////////////////////
+  const [expandido, setExpandido] = useState({});
+
+  const handleCardClick = (row, index) => {
+    setExpandido((prevExpandido) => ({
+      ...prevExpandido,
+      [`${row}-${index}`]: !prevExpandido[`${row}-${index}`],
+    }));
+  };
   
   
 
@@ -141,156 +160,37 @@ function App() {
 
             <div className="habilidadesCard">
               <h2>BackEnd</h2>
-              <p>React / Node.js / Puppeter</p>
-              <p>Express / Mongoose / Python</p>
+              <p>Python / Node.js / Puppeter</p>
+              <p>Express / Mongoose / Django</p>
               <p>MySQL / MongoDB / Entre outros...</p>
             </div>
           </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="habilidadesBody" style={{display:"flex", flexDirection:"column", justifyContent:"center"}}>
-                {/* //PRIMEIRA FILA */}
-                <div style={{margin:"2.5px 0", width:"100%", display:"flex", alignItems:"center", justifyContent:"center"}}>
-                  <div style={{margin:"0 10px",border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px", textAlign:"center"}}>
-                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>HTML</p>
-                  </div>
-                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
-                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>CSS</p>
-                  </div>
+            <div className="habilidadesBody" style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
+              {habilidades.map((row, rowIndex) => (
+                <div key={rowIndex} style={{ margin: "2.5px 0", width: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                  {row.map((card, index) => (
+                    <div
+                      key={index}
+                      onClick={() => handleCardClick(rowIndex, index)}
+                      style={{
+                        margin: "0 10px",
+                        border: "1px solid black",
+                        width: expandido[`${rowIndex}-${index}`] ? "120px" : "100px",
+                        height: expandido[`${rowIndex}-${index}`] ? "60px" : "20px",
+                        borderRadius: "20px",
+                        textAlign: "center",
+                        transition: "width 0.3s ease-in-out, height 0.3s ease-in-out",
+                      }}
+                    >
+                      <p style={{ margin: "0", fontSize: "1.5rem", textAlign: "center" }}>{card}</p>
+                      {expandido[`${rowIndex}-${index}`] && <p style={{ display: "block" }}>Descrição</p>}
+                    </div>
+                  ))}
                 </div>
-                {/*//SEGUNDA FILA */}
-                <div style={{margin:"2.5px 0", width:"100%", display:"flex", alignItems:"center", justifyContent:"center"}}>
-                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px", textAlign:"center"}}>
-                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Javascript</p>
-                  </div>
-                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
-                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>React</p>
-                  </div>
-                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
-                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Hooks</p>
-                  </div>
-                </div>
-                {/*//TERCEIRA FILA */}
-                <div style={{margin:"2.5px 0", width:"100%", display:"flex", alignItems:"center", justifyContent:"center"}}>
-                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px", textAlign:"center"}}>
-                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Git</p>
-                  </div>
-                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
-                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>GitHub</p>
-                  </div>
-                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
-                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>HTTP</p>
-                  </div>
-                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
-                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Node.js</p>
-                  </div>
-                </div>
-                {/* /// ONDA */}
-                <div className="agua" style={{width:"100%", borderBottom:"1px solid blue", position:"absolute", height:"60svh", backgroundColor:"transparent"}}></div>
-                <div className="agua" style={{width:"100%", borderBottom:"1px solid blue", position:"absolute", height:"60svh", backgroundColor:"#03a9f4"}}></div>
-                {/*//QUARTA FILA */}
-                <div style={{marginBlock:"2.5px",marginTop:"10px", width:"100%", display:"flex", alignItems:"center", justifyContent:"center"}}>
-                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px", textAlign:"center"}}>
-                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Python</p>
-                  </div>
-                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
-                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Express</p>
-                  </div>
-                  <div style={{margin:"0 10px", border:"1px solid black", width:"130px", height:"20px", borderRadius:" 20px"}}>
-                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Prisma ORM</p>
-                  </div>
-                  <div style={{margin:"0 10px", border:"1px solid black", width:"120px", height:"20px", borderRadius:" 20px"}}>
-                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Mongoose</p>
-                  </div>
-                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
-                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Express</p>
-                  </div>
-                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px", textAlign:"center"}}>
-                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Django</p>
-                  </div>
-                </div>
-                {/*//QUINTA FILA */}
-                <div style={{margin:"2.5px 0", width:"100%", display:"flex", alignItems:"center", justifyContent:"center"}}>
-                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
-                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Flask</p>
-                  </div>
-                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
-                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Flask</p>
-                  </div>
-                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
-                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>SQL</p>
-                  </div>
-                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
-                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>NoSQL</p>
-                  </div>
-                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
-                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>MySQL</p>
-                  </div>
-                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px", textAlign:"center"}}>
-                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>MongoDB</p>
-                  </div>
-                  <div style={{margin:"0 10px", border:"1px solid black", width:"110px", height:"20px", borderRadius:" 20px"}}>
-                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>API Restful</p>
-                  </div>
-                </div>
-                {/*//SEXTA FILA */}
-                <div style={{margin:"2.5px 0", width:"85%", display:"flex", alignItems:"center", justifyContent:"center"}}>
-                  <div style={{margin:"0 10px", border:"1px solid black", width:"120px", height:"20px", borderRadius:" 20px"}}>
-                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>ELastic Searchk</p>
-                  </div>
-                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
-                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Docker</p>
-                  </div>
-                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
-                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Kubernetes</p>
-                  </div>
-                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
-                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Web Services</p>
-                  </div>
-                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
-                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Apache</p>
-                  </div>
-                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px", textAlign:"center"}}>
-                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>AWS</p>
-                  </div>
-                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px", textAlign:"center"}}>
-                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Kafka</p>
-                  </div>
-                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
-                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>POO</p>
-                  </div>
-                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
-                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Serveless</p>
-                  </div>
-                </div>
-                {/*//SETIMA FILA */}
-                <div style={{margin:"2.5px 0", width:"100%", display:"flex", alignItems:"center", justifyContent:"center"}}>
-                  <div style={{margin:"0 10px", border:"1px solid black", width:"160px", height:"20px", borderRadius:" 20px"}}>
-                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Arquitetura de software</p>
-                  </div>
-                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
-                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Monolito</p>
-                  </div>
-                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
-                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Mircroserviços</p>
-                  </div>
-                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
-                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Singleton</p>
-                  </div>
-                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px", textAlign:"center"}}>
-                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Oauth</p>
-                  </div>
-                  <div style={{margin:"0 10px", border:"1px solid black", width:"145px", height:"20px", borderRadius:" 20px", textAlign:"center"}}>
-                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Basic Authentication</p>
-                  </div>
-                  <div style={{margin:"0 10px", border:"1px solid black", width:"145px", height:"20px", borderRadius:" 20px", textAlign:"center"}}>
-                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Token Authentication</p>
-                  </div>
-                  <div style={{margin:"0 10px", border:"1px solid black", width:"100px", height:"20px", borderRadius:" 20px"}}>
-                    <p style={{margin:"0", fontSize:"1.5rem", textAlign:"center"}}>Testes Unitarios</p>
-                  </div>
-                </div>
-              </div>
+              ))}
+    </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="habilidadesBody">

@@ -308,14 +308,15 @@ h1{
         margin-top: 7vh;
         margin-bottom: 200px;
         height: 60vh;
-        width: 80%;/* 
+        width: 80vw;/* 
         background-color: rgba(240, 248, 255, 0.084);
         backdrop-filter: blur(20px); */
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
         background-color: white;
         border-radius: 20px;
+        z-index: 0;
     }
         .habilidadesCard{
             margin: 50px;
@@ -330,6 +331,7 @@ h1{
             color: black;
             font-size: 2rem;
             text-align: center;
+            margin: 5px;
         }
 
     .habilidadesImagens{

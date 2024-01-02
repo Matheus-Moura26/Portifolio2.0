@@ -1,16 +1,16 @@
 //importar style
 import "./style/pages/home.css"
-import { TiThMenu } from "react-icons/ti";
+import "aos/dist/aos.css" 
 
 //importar components
 
 //importar Pages
 
 //importar hooks,frameworks, bibliotecas
-import Aos from "aos";
-import "aos/dist/aos.css" 
 import React, { useEffect, useState } from 'react'
-import "./style/contents/images/conhecimentos/teste.jpg"
+import Aos from "aos";
+import { TiThMenu } from "react-icons/ti";
+import {Swiper, SwiperSlide} from "swiper/react";
 
 function App() {
 
@@ -119,27 +119,37 @@ function App() {
       <div className="textoAnimado1Body">
         <span></span>
       </div>
-
       <div style={{width: "100%", height: "5vh", marginTop: "85vh", display: "flex", alignItems: "center", justifyContent: "center", textAlign: "center"}}>
       <h2 style={{ color: "white", width: "100%" }}></h2>
       </div>
       
-      <div className="habilidadesBody">
-        <div className="habilidadesCard">
-          <h2>FrontEnd</h2>
-          <p>Identidade / UX & UI / Animação</p>
-          <p>React / Web / Em breve Mobile com React Native</p>
-          <p></p>
-          <p></p>
-        </div>
-        
-        <div className="habilidadesCard">
-          <h2>BackEnd</h2>
-          <p>React / Node.js / Puppeter</p>
-          <p>Express / Mongoose / Python</p>
-          <p>MySQL / MongoDB / Entre outros...</p>
-        </div>
-      </div>
+      <Swiper
+        className="habilidadesBody"
+        style={{zIndex:"0"}}
+        sliderPreview={1}
+        pagination={{clickable: true}}
+        navigation
+      >
+        <SwiperSlide>
+          <div className="habilidadesBody">
+            <div className="habilidadesCard">
+              <h2>FrontEnd</h2>
+              <p>Identidade / UX & UI / Animação</p>
+              <p>React / Web / Em breve Mobile com React Native</p>
+            </div>
+
+            <div className="habilidadesCard">
+              <h2>BackEnd</h2>
+              <p>React / Node.js / Puppeter</p>
+              <p>Express / Mongoose / Python</p>
+              <p>MySQL / MongoDB / Entre outros...</p>
+            </div>
+          </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="habilidadesBody">git</div>
+            </SwiperSlide>
+      </Swiper>
 
       {/* <div className="habilidadesImagens">
         <div className="imagem">

@@ -421,6 +421,7 @@ h1{
         .filtro20px{
         
             opacity: 0;
+            transition: .3s ease-in-out;
         }
         .filtro20px:hover{
             opacity: 1;

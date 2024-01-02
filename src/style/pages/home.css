@@ -313,13 +313,12 @@ h1{
         backdrop-filter: blur(20px); */
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
         background-color: white;
         border-radius: 20px;
         z-index: 0;
     }
         .habilidadesCard{
-            margin: 50px;
         }
         
         .habilidadesCard h2{

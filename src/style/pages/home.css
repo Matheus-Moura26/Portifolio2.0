@@ -429,7 +429,7 @@ h1{
 
         /* /////////// MOVIMENTO DA AGUA //////////// */
         .agua{
-            animation: animate 4s ease-in-out infinite;
+            animation: animate 2s ease-in-out infinite;
         }
         @keyframes animate 
         {

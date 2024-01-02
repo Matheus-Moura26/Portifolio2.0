@@ -186,6 +186,7 @@ function App() {
                   </div>
                 </div>
                 {/* /// ONDA */}
+                <div className="agua" style={{width:"100%", borderBottom:"1px solid blue", position:"absolute", height:"60svh", backgroundColor:"transparent"}}></div>
                 <div className="agua" style={{width:"100%", borderBottom:"1px solid blue", position:"absolute", height:"60svh", backgroundColor:"#03a9f4"}}></div>
                 {/*//QUARTA FILA */}
                 <div style={{marginBlock:"2.5px",marginTop:"10px", width:"100%", display:"flex", alignItems:"center", justifyContent:"center"}}>

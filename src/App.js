@@ -167,13 +167,12 @@ function App() {
 
         <div style={{width: "40%", height: "60vh", maxHeight: "60vh", display:"flex", alignItems:"center", justifyContent:"flex-start", flexDirection: "column", overflowY:"auto"}}>
 
-          <div nome="Blue Wizard" onClick={()=>{handlePortifolio("Blue Wizard"); handleBackground("classe1")}} style={{marginTop: "20px",width: "50%", height: "20vh", minHeight:"20vh", border: "1px solid black"}}></div>
-          <div nome="Brasil Luvas" onClick={()=>{handlePortifolio("Brasil Luvas"); handleBackground("classe2")}} style={{marginTop: "20px",width: "50%", height: "20vh", minHeight:"20vh", border: "1px solid black"}}></div>
-          <div style={{marginTop: "20px",width: "50%", height: "20vh", minHeight:"20vh", border: "1px solid black"}}></div>
-          <div style={{marginTop: "20px",width: "50%", height: "20vh", minHeight:"20vh", border: "1px solid black"}}></div>
-          <div style={{marginTop: "20px",width: "50%", height: "20vh", minHeight:"20vh", border: "1px solid black"}}></div>
-          <div style={{marginTop: "20px",width: "50%", height: "20vh", minHeight:"20vh", border: "1px solid black"}}></div>
-
+          <div nome="Blue Wizard" onClick={()=>{handlePortifolio("Blue Wizard"); handleBackground("classe1")}} style={{marginTop: "20px",width: "50%", height: "20vh", minHeight:"20vh", border: "1px solid black", cursor:"pointer"}}></div>
+          <div nome="Brasil Luvas" onClick={()=>{handlePortifolio("Brasil Luvas"); handleBackground("classe2")}} style={{marginTop: "20px",width: "50%", height: "20vh", minHeight:"20vh", border: "1px solid black", cursor:"pointer"}}></div>
+          <div onClick={()=>{ handleBackground("classe3")}} style={{marginTop: "20px",width: "50%", height: "20vh", minHeight:"20vh", border: "1px solid black", cursor:"pointer"}}></div>
+          <div onClick={()=>{ handleBackground("classe4")}} style={{marginTop: "20px",width: "50%", height: "20vh", minHeight:"20vh", border: "1px solid black", cursor:"pointer"}}></div>
+          <div onClick={()=>{ handleBackground("classe5")}} style={{marginTop: "20px",width: "50%", height: "20vh", minHeight:"20vh", border: "1px solid black", cursor:"pointer"}}></div>
+          
         </div>    
       </div>
 

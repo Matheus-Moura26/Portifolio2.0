@@ -379,7 +379,27 @@ h1{
         z-index: 1;
     }
 
-
+    .classe1{
+        background-image: url("../contents/images/conhecimentos/teste6.jpg");
+        transition: background-image 0.5s ease;
+    }
+    .classe2{
+        background-image: url("../contents/images/conhecimentos/teste7.jpg");
+        transition: background-image 0.5s ease;
+    }
+    .classe3{
+        background-image: url("../contents/images/conhecimentos/teste8.jpg");
+        transition: background-image 0.5s ease;
+    }
+    .classe4{
+        background-image: url("../contents/images/conhecimentos/teste9.jpg");
+        transition: background-image 0.5s ease;
+    }
+    .classe5{
+        background-image: url("../contents/images/conhecimentos/teste10.jpg");
+        transition: background-image 0.5s ease;
+        
+    }
         
 
         @media (max-width: 500px){
@@ -413,11 +433,3 @@ h1{
         }
 
 
-.classe2{
-    background-image: url("../contents/images/conhecimentos/React.jpg");
-    transition: background-image 0.5s ease;
-}
-.classe1{
-    background-image: url("../contents/images/conhecimentos/teste.jpg");
-    transition: background-image 0.5s ease;
-}

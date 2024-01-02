@@ -147,7 +147,14 @@ function App() {
           </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="habilidadesBody">git</div>
+              <div className="habilidadesBody">
+                TODAS AS TECNOLOGIAS
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="habilidadesBody">
+                ECONOMIA, INDICES
+              </div>
             </SwiperSlide>
       </Swiper>
 

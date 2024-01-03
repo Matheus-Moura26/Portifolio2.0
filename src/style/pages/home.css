@@ -324,32 +324,53 @@ h1{
           
     /* //////////// PROJETOS //////////// */
 
-        
+        #Projetos{
+            margin-top: 10svh;
+            margin-bottom: 20svh;
+            height: 65svh;
+            border-radius: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+            background-size: cover;
+            background-position: center;
+            width: 80%;
+        }
+        .classe1{
+            background-image: url("../contents/images/conhecimentos/teste6.jpg");
+            transition: background-image 0.5s ease;
+            
+        }
+        .classe2{
+            background-image: url("../contents/images/conhecimentos/teste12.jpg");
+            transition: background-image 0.5s ease;
+        }
+        .classe3{
+            background-image: url("../contents/images/conhecimentos/teste8.jpg");
+            transition: background-image 0.5s ease;
+        }
+        .classe4{
+            background-image: url("../contents/images/conhecimentos/teste9.jpg");
+            transition: background-image 0.5s ease;
+        }
+        .classe5{
+            background-image: url("../contents/images/conhecimentos/teste10.jpg");
+            transition: background-image 0.5s ease;
+            
+        }
+            .projetosSection1{
+              width: 55%;
+              height: 65svh;
+              margin: 0 1.9vw;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-around;
+            }
                
        
-               .classe1{
-                   background-image: url("../contents/images/conhecimentos/teste6.jpg");
-                   transition: background-image 0.5s ease;
-                   
-               }
-               .classe2{
-                   background-image: url("../contents/images/conhecimentos/teste12.jpg");
-                   transition: background-image 0.5s ease;
-               }
-               .classe3{
-                   background-image: url("../contents/images/conhecimentos/teste8.jpg");
-                   transition: background-image 0.5s ease;
-               }
-               .classe4{
-                   background-image: url("../contents/images/conhecimentos/teste9.jpg");
-                   transition: background-image 0.5s ease;
-               }
-               .classe5{
-                   background-image: url("../contents/images/conhecimentos/teste10.jpg");
-                   transition: background-image 0.5s ease;
-                   
-               }
-               .projetosBody {
+               .projetosSection2 {
                 width: 40%;
                 height: 65svh;
                 max-height: 65svh;
@@ -359,7 +380,7 @@ h1{
                 flex-direction: column;
                 overflow-y: auto;
                }
-               .projetosBody::-webkit-scrollbar{
+               .projetosSection2::-webkit-scrollbar{
                    display: none;
                }
                    .bkgERP{
@@ -544,6 +565,7 @@ h1{
     .textoAnimado1Body span{
         font-size: 3rem;
     }
+    
     .textoAnimado1Body span::before{
         
     }
@@ -567,7 +589,11 @@ h1{
         width: 100%;
     }
     
-    .textoAnimado1Body span{
-        margin-left: 3vw;
-    }  
+    .bkgERP{
+        width: 80%;
+    }
+    .bkgBrasilLuvas{
+        width: 80%;
+    }
+
 }

@@ -455,38 +455,10 @@ function App() {
           justifyContent: "center",
         }}
       >
-        <div
-          className={classe}
-          style={{
-            marginTop: "10svh",
-            marginBottom: "20svh",
-            height: "65svh",
-            borderRadius: "20px",
-            display: "flex",
-            flexWrap: "wrap",
-            flexDirection: "row",
-            justifyContent: "space-between",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            width: window.innerWidth <= 1200 ? "100%" : "80%"
-          }}
-          id="Projetos"
-        >
-          <div
-            style={{
-              width: "55%",
-              height: "65svh",
-              margin: "0 1.9vw",
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "space-around",
-            }}
-          >
-            <div style={{}}>
-              <h2
-                style={{ fontSize: "3.5rem", color: portifolioAtual.fontColor }}
-              >
+        <div className={classe} id="Projetos"  >
+          <div className="projetosSection1">
+            <div >
+              <h2 style={{ fontSize: "3.5rem", color: portifolioAtual.fontColor }}>
                 Matheus Moura
               </h2>
             </div>
@@ -541,8 +513,7 @@ function App() {
           </div>
 
           <div
-            className="projetosBody"
-            
+            className="projetosSection2"
           >
             <div
               className="bkgERP"

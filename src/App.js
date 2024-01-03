@@ -327,7 +327,7 @@ function App() {
       </div>
 
       {/* Sobre mim */}
-      <div id="sobreMin" style={{ width: "100%", height: "90svh" }}>
+      <section id="sobreMin" style={{ width: "100%", height: "90svh" }}>
         <div className="sobreMinBody" data-aos="fade-right">
           <p className="nome">Matheus Moura</p>
           <h2>Desenvolvedor FullStack</h2>
@@ -369,8 +369,8 @@ function App() {
         >
           <h2 style={{ color: "white", width: "100%" }}></h2>
         </div>
-      </div>
-      <div
+      </section>
+      <section
         id="habilidades"
         style={{
           width: "100%",
@@ -442,9 +442,9 @@ function App() {
             </div>
           </SwiperSlide>
         </Swiper>
-      </div>
+      </section>
 
-      <div
+      <section
         id="projetos"
         style={{
           width: "100%",
@@ -460,7 +460,7 @@ function App() {
             marginTop: "10svh",
             marginBottom: "20svh",
             width: "80%",
-            height: "60svh",
+            height: "65svh",
             borderRadius: "20px",
             display: "flex",
             flexWrap: "wrap",
@@ -473,7 +473,7 @@ function App() {
           <div
             style={{
               width: "55%",
-              height: "60svh",
+              height: "65svh",
               margin: "0 1.9vw",
               display: "flex",
               flexDirection: "column",
@@ -542,8 +542,8 @@ function App() {
             className="projetosBody"
             style={{
               width: "40%",
-              height: "60svh",
-              maxHeight: "60svh",
+              height: "65svh",
+              maxHeight: "65svh",
               display: "flex",
               alignItems: "center",
               justifyContent: "flex-start",
@@ -675,9 +675,9 @@ function App() {
             ></div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div
+      <section
         style={{
           width: "100%",
           height: "25svh",
@@ -734,7 +734,7 @@ function App() {
             </a>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

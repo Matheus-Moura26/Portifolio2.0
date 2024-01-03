@@ -456,14 +456,24 @@ h1{
             transform: translate(-50%, -50%);
             width: 200px;
             height: 200px;
-            backdrop-filter: blur(5px);
+            backdrop-filter: blur(10px);
           }
           
           .habilidadeCard.expanded p.description {
             display: block;
+            animation: descricao 1s ease-in-out both;
           }
 
-        
+        @keyframes descricao{
+            0%{
+                opacity: 0;
+                margin-top: 0px;
+            }
+            100%{
+                opacity: 1;
+                margin-top: 80px;
+            }
+        }
           
     
 

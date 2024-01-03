@@ -439,26 +439,14 @@ h1{
             cursor: pointer;
             position: relative;
             transition: all 1000ms ease-out;
-          }
-          .habilidadeCard {
-            margin: 2.5px;
-            border: 1px solid black;
-            width: 100px;
-            height: 20px;
-            border-radius: 20px;
-            text-align: center;
-            cursor: pointer;
-            position: relative;
-            transition: all 1000ms ease-out;
-          }
-          
-          .habilidadeCard p {
+        }
+            .bigHabilidadeCard p {
             margin: 0;
             font-size: 1.5rem;
             text-align: center;
-          }
-          
-          .habilidadeCard.expanded {
+            }
+            
+            .bigHabilidadeCard.expanded {
             z-index: 2;
             position: absolute;
             top: 50%;
@@ -467,12 +455,45 @@ h1{
             width: 200px;
             height: 200px;
             backdrop-filter: blur(10px);
-          }
-          
-          .habilidadeCard.expanded p.description {
+            }
+            
+            .bigHabilidadeCard.expanded p.description {
             display: block;
             animation: descricao 1s ease-in-out both;
-          }
+            }
+        .habilidadeCard {
+        margin: 2.5px;
+        border: 1px solid black;
+        width: 100px;
+        height: 20px;
+        border-radius: 20px;
+        text-align: center;
+        cursor: pointer;
+        position: relative;
+        transition: all 1000ms ease-out;
+        }
+        
+        .habilidadeCard p {
+        margin: 0;
+        font-size: 1.5rem;
+        text-align: center;
+        }
+        
+        .habilidadeCard.expanded {
+        z-index: 2;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 200px;
+        height: 200px;
+        backdrop-filter: blur(10px);
+        }
+        
+        .habilidadeCard.expanded p.description {
+        display: block;
+        animation: descricao 1s ease-in-out both;
+        }
 
         @keyframes descricao{
             0%{

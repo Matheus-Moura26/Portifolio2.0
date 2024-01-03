@@ -1,3 +1,4 @@
+/* /////Trabalhando direto no html */
 html{
     font-size: 64%;
 }
@@ -71,21 +72,7 @@ h1{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* /// RESTO DO SITE */
 
 
 .appBody{
@@ -254,100 +241,72 @@ h1{
             margin: 5px;
         }
 
-    .habilidadesImagens{
-        margin-top: 5svh;
-        margin-bottom: 10svh;
-        width: 90%;
-        height: 80svh;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    
+     
         
-    }
-        .habilidadesImagens .imagem{
-            background-image: url('../contents/images/conhecimentos/teste.jpg');
-            background-size: cover; 
-            background-position: center center;
-            background-repeat: no-repeat;
-            width: 45%;
-            height: 80svh;
-            box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.68);
-        }
-        .habilidadesImagens .imagem h2{
+        .filtro{
             position: absolute;
-            margin-left: 15% ;
-            margin-top: 30px;
-            text-align: center;
-            font-size: 6.5rem;
-            color: white;
-            font-weight: bolder;
-            font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            z-index: 3;
-            text-shadow: 1px 5px 10px rgb(0, 0, 0);
+            width: 40.5%;
+            height: 80svh;
+            opacity: .1;
+            transition: .3s ease-out;
         }
-    .filtro{
-        position: absolute;
-        width: 40.5%;
-        height: 80svh;
-        opacity: .1;
-        transition: .3s ease-out;
-    }
-    .filtro:hover{
-        position: absolute;
-        width: 40.5%;
-        height: 80svh;
-        backdrop-filter: blur(20px);
-        opacity: 1;
-        z-index: 1;
-    }
-
-    .classe1{
-        background-image: url("../contents/images/conhecimentos/teste6.jpg");
-        transition: background-image 0.5s ease;
-    }
-    .classe2{
-        background-image: url("../contents/images/conhecimentos/teste12.jpg");
-        transition: background-image 0.5s ease;
-    }
-    .classe3{
-        background-image: url("../contents/images/conhecimentos/teste8.jpg");
-        transition: background-image 0.5s ease;
-    }
-    .classe4{
-        background-image: url("../contents/images/conhecimentos/teste9.jpg");
-        transition: background-image 0.5s ease;
-    }
-    .classe5{
-        background-image: url("../contents/images/conhecimentos/teste10.jpg");
-        transition: background-image 0.5s ease;
-        
-    }
-    .projetosBody::-webkit-scrollbar{
-        display: none;
-    }
-        .bkgERP{
-            background-image: url("../contents/images/projetos/ERP.PNG");
-            background-Size: contain;
-            background-Position: center;
-            background-repeat: no-repeat;
-            background-color: rgb(1, 1, 63);
-        }
-        .bkgBrasilLuvas{
-            background-image: url("../contents/images/projetos/brasilLuvas.PNG");
-            background-Size: contain;
-            background-Position: center;
-            background-repeat: no-repeat;
-            background-color: rgb(1, 1, 63);
+        .filtro:hover{
+            position: absolute;
+            width: 40.5%;
+            height: 80svh;
             backdrop-filter: blur(20px);
-        }
-        .filtro20px{
-        
-            opacity: 0;
-            transition: .3s ease-in-out;
-        }
-        .filtro20px:hover{
             opacity: 1;
+            z-index: 1;
         }
+
+        .classe1{
+            background-image: url("../contents/images/conhecimentos/teste6.jpg");
+            transition: background-image 0.5s ease;
+        }
+        .classe2{
+            background-image: url("../contents/images/conhecimentos/teste12.jpg");
+            transition: background-image 0.5s ease;
+        }
+        .classe3{
+            background-image: url("../contents/images/conhecimentos/teste8.jpg");
+            transition: background-image 0.5s ease;
+        }
+        .classe4{
+            background-image: url("../contents/images/conhecimentos/teste9.jpg");
+            transition: background-image 0.5s ease;
+        }
+        .classe5{
+            background-image: url("../contents/images/conhecimentos/teste10.jpg");
+            transition: background-image 0.5s ease;
+            
+        }
+        .projetosBody::-webkit-scrollbar{
+            display: none;
+        }
+            .bkgERP{
+                background-image: url("../contents/images/projetos/ERP.PNG");
+                background-Size: contain;
+                background-Position: center;
+                background-repeat: no-repeat;
+                background-color: rgb(1, 1, 63);
+            }
+            .bkgBrasilLuvas{
+                background-image: url("../contents/images/projetos/brasilLuvas.PNG");
+                background-Size: contain;
+                background-Position: center;
+                background-repeat: no-repeat;
+                background-color: rgb(1, 1, 63);
+                backdrop-filter: blur(20px);
+            }
+            .filtro20px{
+            
+                opacity: 0;
+                transition: .3s ease-in-out;
+            }
+            .filtro20px:hover{
+                opacity: 1;
+            }
 
         /* /////////// Zoom das tecnologias //////////// */
         
@@ -549,10 +508,15 @@ h1{
                 width: 100%;
             }
         }
-
+#Projetos{
+    width: 80%;
+}
 
 @media (max-width: 1250px){
     .habilidadesBody{
         width: 100%;
+    }
+    #Projetos{
+        width:100%
     }
 }

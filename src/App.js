@@ -458,10 +458,10 @@ function App() {
       >
         <div
           className={classe}
+          id="Projetos"
           style={{
             marginTop: "10svh",
             marginBottom: "20svh",
-            width: "80%",
             height: "65svh",
             borderRadius: "20px",
             display: "flex",

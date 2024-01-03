@@ -426,9 +426,11 @@ function App() {
                   {row.map((tech, index) => (
                     <div
                       key={index}
-                      className={`habilidadeCard ${
-                        isCardExpanded(rowIndex, index) ? "expanded" : ""
-                      }`}
+                      className={`${
+                        ["Elastic Search", "Arquitetura de software", "Basic Authentication", "Token Authentication"].includes(tech.name)
+                          ? "bigHabilidadeCard"
+                          : "habilidadeCard"
+                      } ${isCardExpanded(rowIndex, index) ? "expanded" : ""}`}
                       onClick={() => handleCardClick(rowIndex, index)}
                     >
                       <p>{tech.name}</p>

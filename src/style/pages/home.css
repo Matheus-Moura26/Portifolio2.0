@@ -429,10 +429,21 @@ h1{
         /* /////////// Zoom das tecnologias //////////// */
         
          
+          .bigHabilidadeCard {
+            margin: 2.5px;
+            border: 1px solid black;
+            width: 160px;
+            height: 20px;
+            border-radius: 20px;
+            text-align: center;
+            cursor: pointer;
+            position: relative;
+            transition: all 1000ms ease-out;
+          }
           .habilidadeCard {
             margin: 2.5px;
             border: 1px solid black;
-            width: 155px;
+            width: 100px;
             height: 20px;
             border-radius: 20px;
             text-align: center;

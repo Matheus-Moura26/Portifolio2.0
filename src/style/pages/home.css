@@ -481,39 +481,41 @@ h1{
 
 
         @media (max-width: 500px){
-            .textoAnimado1Body {
-                top: 28svh;
-                left: 0;
-                right: 0;
-                width: 95%;
-                height: 10svh;
-                display: flex;
-                align-items: center;
-                
-            }
-            .textoAnimado1Body span{
-                font-size: 3rem;
-            }
-            .textoAnimado1Body span::after{
-                height: 6rem;
-            }
-            .sobreMinBody{
-                margin-top: 35svh;
-                width: 90%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            .habilidadesBody{
-                justify-content: space-between;
-                width: 100%;
-            }
         }
-#Projetos{
-    width: 80%;
-}
-
-@media (max-width: 1250px){
+        
+        
+        @media (max-width: 1250px){
+    .textoAnimado1Body {
+        top: 28svh;
+        left: 0;
+        right: 0;
+        width: 95%;
+        height: 10svh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .textoAnimado1Body span{
+        font-size: 3rem;
+    }
+    .textoAnimado1Body span::before{
+        
+    }
+    .textoAnimado1Body span::after{
+        
+        height: 6rem;
+    }
+    .sobreMinBody{
+        margin-top: 35svh;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .habilidadesBody{
+        justify-content: space-between;
+        width: 100%;
+    }
     .habilidadesBody{
         width: 100%;
     }

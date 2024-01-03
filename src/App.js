@@ -463,6 +463,7 @@ function App() {
             marginTop: "10svh",
             marginBottom: "20svh",
             height: "65svh",
+            width:"80%",
             borderRadius: "20px",
             display: "flex",
             flexWrap: "wrap",

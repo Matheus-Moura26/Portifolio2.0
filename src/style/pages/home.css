@@ -608,27 +608,24 @@ h1{
             font-size: 1.5rem;
         }
     .projetosSection2Background{
-        overflow-x: hidden;
-        width: 100%;
+        overflow-x: scroll;
+        width: 100vw;
     }
     
     .projetosSection2{
-        min-width: 100%;
-        width: 130%;
+        width: 200%;
         height: 40svh;
-        max-height: 32svh;
+        max-height: 40svh;
         flex-direction: row;
-        justify-content: center;
-        overflow: auto;
+        overflow: scroll;
+        justify-content: flex-start;
+        position: relative;
     }
     
-    .bkgERP{
-        margin-left: 15px;
-        margin-right: 25px;
-        width: 40%;
-    }
-    .bkgBrasilLuvas{
-        width: 40%;
+    .bkgERP, .bkgBrasilLuvas{
+        flex: 0 0 auto;
+        margin: 0 20px;
+        width: 50%;
     }
 
 }

@@ -478,9 +478,6 @@ function App() {
             <div style={{ padding: "0 15px", height: "147svh" }}>
               <p
                 style={{
-                  fontSize: window.innerWidth <= 1200? "3rem" : "1.7rem",
-                  fontWeight: "lighter",
-                  textAlign: "justify",
                   color: portifolioAtual.fontColor,
                 }}
               >

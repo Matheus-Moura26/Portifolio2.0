@@ -508,7 +508,7 @@ h1{
         }
 
 
-@media (max-width){
+@media (max-width: 1250px){
     .habilidadesBody{
         width: 100%;
     }

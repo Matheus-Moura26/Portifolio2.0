@@ -508,3 +508,8 @@ h1{
         }
 
 
+@media (max-width){
+    .habilidadesBody{
+        width: 100%;
+    }
+}

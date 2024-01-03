@@ -542,16 +542,7 @@ function App() {
 
           <div
             className="projetosBody"
-            style={{
-              width: "40%",
-              height: "65svh",
-              maxHeight: "65svh",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "flex-start",
-              flexDirection: "column",
-              overflowY: "auto",
-            }}
+            
           >
             <div
               className="bkgERP"
@@ -560,39 +551,11 @@ function App() {
                 handlePortifolio("Blue Wizard");
                 handleBackground("classe1");
               }}
-              style={{
-                marginTop: "20px",
-                width: window.innerWidth <= 1200 ? "80%" : "60%",
-                height: "20svh",
-                minHeight: "20svh",
-                border: "1px solid black",
-                cursor: "pointer",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                position: "relative",
-              }}
             >
-              <div
-                className="filtro20px"
-                style={{
-                  backdropFilter: "blur(10px)",
-                  width: "100%",
-                  height: "20svh",
-                  minHeight: "20svh",
-                }}
-              ></div>
-              <h2
-                style={{
-                  color: "white",
-                  fontSize: "1.9rem",
-                  position: "absolute",
-                  pointerEvents: "none",
-                }}
-              >
-                Blue Wizard
-              </h2>
+              <div className="filtro20px"></div>
+              <h2>Blue Wizard</h2>
             </div>
+
             <div
               className="bkgBrasilLuvas"
               nome="Brasil Luvas"
@@ -600,81 +563,12 @@ function App() {
                 handlePortifolio("Brasil Luvas");
                 handleBackground("classe2");
               }}
-              style={{
-                marginTop: "20px",
-                width: window.innerWidth <= 1200 ? "80%" : "60%",
-                height: "20svh",
-                minHeight: "20svh",
-                border: "1px solid black",
-                cursor: "pointer",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                position: "relative",
-              }}
             >
-              <div
-                className="filtro20px"
-                style={{
-                  backdropFilter: "blur(10px)",
-                  width: "100%",
-                  height: "20svh",
-                  minHeight: "20svh",
-                }}
-              ></div>
-              <h2
-                style={{
-                  color: "black",
-                  fontSize: "1.9rem",
-                  position: "absolute",
-                  pointerEvents: "none",
-                }}
-              >
-                Brasil Luvas
-              </h2>
+              <div className="filtro20px"></div>
+              <h2>Brasil Luvas</h2>
             </div>
-            <div
-              onClick={() => {
-                letrasPretas();
-                handleBackground("classe3");
-              }}
-              style={{
-                marginTop: "20px",
-                width: window.innerWidth <= 1200 ? "80%" : "60%",
-                height: "20svh",
-                minHeight: "20svh",
-                border: "1px solid black",
-                cursor: "pointer",
-              }}
-            ></div>
-            <div
-              onClick={() => {
-                letrasBrancas();
-                handleBackground("classe4");
-              }}
-              style={{
-                marginTop: "20px",
-                width: window.innerWidth <= 1200 ? "80%" : "60%",
-                height: "20svh",
-                minHeight: "20svh",
-                border: "1px solid black",
-                cursor: "pointer",
-              }}
-            ></div>
-            <div
-              onClick={() => {
-                handleBackground("classe5");
-              }}
-              style={{
-                marginTop: "20px",
-                marginBottom: "20px",
-                width: window.innerWidth <= 1200 ? "80%" : "60%", 
-                height: "20svh",
-                minHeight: "20svh",
-                border: "1px solid black",
-                cursor: "pointer",
-              }}
-            ></div>
+            
+            
           </div>
         </div>
       </section>
@@ -690,24 +584,11 @@ function App() {
           paddingBottom: "50px",
         }}
       >
-        <div
-          style={{
-            border: "1px solid white",
-            borderRadius: "20px",
-            height: "20svh",
-            width: "20%",
-          }}
-        >
-          <p style={{ color: "white", fontSize: "2rem", textAlign: "center" }}>
+        <div className="redesSociaisBody">
+          <p >
             Me siga nas redes sociais
           </p>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-around",
-              marginTop: "40px",
-            }}
-          >
+          <div>
             <a href="">
               <FaInstagram
                 color="white"

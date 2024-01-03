@@ -330,6 +330,7 @@ h1{
                .classe1{
                    background-image: url("../contents/images/conhecimentos/teste6.jpg");
                    transition: background-image 0.5s ease;
+                   
                }
                .classe2{
                    background-image: url("../contents/images/conhecimentos/teste12.jpg");
@@ -348,34 +349,96 @@ h1{
                    transition: background-image 0.5s ease;
                    
                }
+               .projetosBody {
+                width: 40%;
+                height: 65svh;
+                max-height: 65svh;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                flex-direction: column;
+                overflow-y: auto;
+               }
                .projetosBody::-webkit-scrollbar{
                    display: none;
                }
                    .bkgERP{
-                       background-image: url("../contents/images/projetos/ERP.PNG");
-                       background-Size: contain;
-                       background-Position: center;
-                       background-repeat: no-repeat;
-                       background-color: rgb(1, 1, 63);
+                        background-image: url("../contents/images/projetos/ERP.PNG");
+                        background-Size: contain;
+                        background-Position: center;
+                        background-repeat: no-repeat;
+                        background-color: rgb(1, 1, 63);
+                        margin-top: 20px;
+                        width: 60%;
+                        height: 20svh;
+                        min-height: 20svh;
+                        border: 1px solid black;
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: relative;
                    }
+                        .bkgERP h2{
+                            color: white;
+                            font-size: 1.9rem;
+                            position: absolute;
+                            pointer-events: none;
+                        }
                    .bkgBrasilLuvas{
-                       background-image: url("../contents/images/projetos/brasilLuvas.PNG");
-                       background-Size: contain;
-                       background-Position: center;
-                       background-repeat: no-repeat;
-                       background-color: rgb(1, 1, 63);
-                       backdrop-filter: blur(20px);
+                        margin-top: 20px;
+                        width:   60%;
+                        height: 20svh;
+                        min-height: 20svh;
+                        border: 1px solid black;
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: relative;
+                        background-image: url("../contents/images/projetos/brasilLuvas.PNG");
+                        background-Size: contain;
+                        background-Position: center;
+                        background-repeat: no-repeat;
+                        background-color: rgb(1, 1, 63);
+                        backdrop-filter: blur(20px);
                    }
+                        .bkgBrasilLuvas h2{
+                            color: black;
+                            font-size: 1.9rem;
+                            position: absolute;
+                            pointer-events: none;
+                        }
                    .filtro20px{
-                   
-                       opacity: 0;
-                       transition: .3s ease-in-out;
+                        backdrop-filter: blur(10px);
+                        width: 100%;
+                        height: 20svh;
+                        min-height: 20svh;
+                        opacity: 0;
+                        transition: .3s ease-in-out;
                    }
+
                    .filtro20px:hover{
                        opacity: 1;
                    }
        
-               
+    .redesSociaisBody{
+        border: 1px solid white;
+        border-radius: 20px;
+        height: 20svh;
+        width: 20%;
+    }
+        .redesSociaisBody p{
+            color: white; 
+            font-size: 2rem;
+            text-align: center;
+        }
+        .redesSociaisBody div{
+            display: flex;
+            justify-content: space-around;
+            height: 16svh;
+            align-items: center;
+        }
 
 
 

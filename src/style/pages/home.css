@@ -149,15 +149,16 @@ h1{
     }
         .textoAnimado1Body p{
             color: white;
-            font-size: 6rem;
+            font-size: 5rem;
         }    
         .textoAnimado1Body span{
             margin-left: 12vw;
             position: relative;
             color: orangered;
-            font-size: 6rem;
+            font-size: 5rem;
             
         }  
+        
       
         .textoAnimado1Body span::before{
             content: "";
@@ -519,4 +520,7 @@ h1{
     #Projetos{
         width:100%
     }
+    .textoAnimado1Body span{
+        margin-left: 3vw;
+    }  
 }

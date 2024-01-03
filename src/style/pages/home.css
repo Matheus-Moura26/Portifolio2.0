@@ -588,12 +588,37 @@ h1{
     .habilidadesBody{
         width: 100%;
     }
+
+    #Projetos{
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .projetosSection1{
+        width: 100%;
+        height: 32svh;
+    }
+    .projetosSection2Background{
+        overflow-x: hidden;
+    }
+    
+    .projetosSection2{
+        min-width: 100%;
+        width: 130%;
+        height: 32svh;
+        max-height: 32svh;
+        flex-direction: row;
+        justify-content: center;
+        overflow: auto;
+    }
     
     .bkgERP{
-        width: 80%;
+        margin-left: 15px;
+        margin-right: 25px;
+        width: 40%;
     }
     .bkgBrasilLuvas{
-        width: 80%;
+        width: 40%;
     }
 
 }

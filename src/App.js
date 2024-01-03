@@ -512,34 +512,36 @@ function App() {
             </div>
           </div>
 
-          <div
-            className="projetosSection2"
-          >
+          <div className="projetosSection2Background">
             <div
-              className="bkgERP"
-              nome="Blue Wizard"
-              onClick={() => {
-                handlePortifolio("Blue Wizard");
-                handleBackground("classe1");
-              }}
+              className="projetosSection2"
             >
-              <div className="filtro20px"></div>
-              <h2>Blue Wizard</h2>
-            </div>
+              <div
+                className="bkgERP"
+                nome="Blue Wizard"
+                onClick={() => {
+                  handlePortifolio("Blue Wizard");
+                  handleBackground("classe1");
+                }}
+              >
+                <div className="filtro20px"></div>
+                <h2>Blue Wizard</h2>
+              </div>
 
-            <div
-              className="bkgBrasilLuvas"
-              nome="Brasil Luvas"
-              onClick={() => {
-                handlePortifolio("Brasil Luvas");
-                handleBackground("classe2");
-              }}
-            >
-              <div className="filtro20px"></div>
-              <h2>Brasil Luvas</h2>
+              <div
+                className="bkgBrasilLuvas"
+                nome="Brasil Luvas"
+                onClick={() => {
+                  handlePortifolio("Brasil Luvas");
+                  handleBackground("classe2");
+                }}
+              >
+                <div className="filtro20px"></div>
+                <h2>Brasil Luvas</h2>
+              </div>
+              
+              
             </div>
-            
-            
           </div>
         </div>
       </section>

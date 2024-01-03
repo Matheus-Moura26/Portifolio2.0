@@ -283,8 +283,15 @@ function App() {
         </div>    
       </div>
 
-      <div style={{width:"100%", height:"20svh", backgroundColor:"black"}}>
-
+      <div style={{width:"100%", height:"25svh", backgroundColor:"black", display:"flex", alignItems:"center", justifyContent:"space-around", paddinggirBottom:"50px"}}>
+        <div style={{border:"1px solid white", borderRadius:"20px", height:"20svh", width:"20%"}}>
+          <p style={{color:"white", fontSize:"2rem", textAlign:"center"}}>Me siga nas sedes sociais</p>
+          <div style={{display:"flex", justifyContent:"space-around", marginTop:"40px"}}>
+            <p style={{color:"white"}}>Instagram</p>
+            <p style={{color:"white"}}>Twitter</p>
+            <p style={{color:"white"}}>Linkedin</p>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -83,12 +83,12 @@ function App() {
         name: "Node.js",
         description: "Ambiente de execução para JavaScript fora do navegador.",
       },
+    ],
+    [
       {
         name: "Python",
         description: "Linguagem de programação de alto nível.",
       },
-    ],
-    [
       {
         name: "Express",
         description:
@@ -108,6 +108,8 @@ function App() {
         description:
           "Framework web de alto nível em Python que incentiva o desenvolvimento rápido e limpo.",
       },
+    ],
+    [
       {
         name: "Django",
         description:
@@ -118,9 +120,6 @@ function App() {
         description:
           "Arquitetura de serviços web baseada em REST (Representational State Transfer).",
       },
-    ],
-    [
-      { name: "Flask", description: "Framework web leve em Python." },
       { name: "Flask", description: "Framework web leve em Python." },
       {
         name: "SQL",
@@ -136,6 +135,8 @@ function App() {
         name: "MySQL",
         description: "Sistema de gerenciamento de banco de dados relacional.",
       },
+    ],
+    [
       {
         name: "MongoDB",
         description: "Banco de dados NoSQL orientado a documentos.",
@@ -149,8 +150,6 @@ function App() {
         description:
           "Plataforma para desenvolvimento, envio e execução de aplicativos em contêineres.",
       },
-    ],
-    [
       {
         name: "Kubernetes",
         description:
@@ -162,6 +161,8 @@ function App() {
           "Conjunto de padrões para implementação de serviços na web.",
       },
       { name: "Apache", description: "Servidor web de código aberto." },
+    ],
+    [
       {
         name: "AWS",
         description: "Amazon Web Services - Plataforma de serviços em nuvem.",
@@ -175,8 +176,6 @@ function App() {
         description:
           "Programação Orientada a Objetos - Paradigma de programação.",
       },
-    ],
-    [
       {
         name: "Arquitetura de software",
         description: "Design e estrutura de sistemas de software.",
@@ -191,6 +190,8 @@ function App() {
         description:
           "Arquitetura de software em que um aplicativo é construído como uma única unidade.",
       },
+    ],
+    [
       {
         name: "Mircroserviços",
         description:
@@ -201,8 +202,6 @@ function App() {
         description:
           "Padrão de design que garante que uma classe tenha apenas uma instância e fornece um ponto global de acesso a ela.",
       },
-    ],
-    [
       {
         name: "Oauth",
         description:
@@ -463,7 +462,7 @@ function App() {
             marginTop: "10svh",
             marginBottom: "20svh",
             height: "65svh",
-            width:"80%",
+            width:"80",
             borderRadius: "20px",
             display: "flex",
             flexWrap: "wrap",

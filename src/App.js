@@ -457,12 +457,10 @@ function App() {
       >
         <div
           className={classe}
-          id="Projetos"
           style={{
             marginTop: "10svh",
             marginBottom: "20svh",
             height: "65svh",
-            width:"80",
             borderRadius: "20px",
             display: "flex",
             flexWrap: "wrap",
@@ -470,7 +468,9 @@ function App() {
             justifyContent: "space-between",
             backgroundSize: "cover",
             backgroundPosition: "center",
+            width: window.innerWidth <= 1200 ? "100%" : "80%"
           }}
+          id="Projetos"
         >
           <div
             style={{
@@ -506,7 +506,7 @@ function App() {
             <div style={{ padding: "0 15px", height: "147svh" }}>
               <p
                 style={{
-                  fontSize: "1.7rem",
+                  fontSize: window.innerWidth <= 1200? "3rem" : "1.7rem",
                   fontWeight: "lighter",
                   textAlign: "justify",
                   color: portifolioAtual.fontColor,
@@ -562,7 +562,7 @@ function App() {
               }}
               style={{
                 marginTop: "20px",
-                width: "60%",
+                width: window.innerWidth <= 1200 ? "80%" : "60%",
                 height: "20svh",
                 minHeight: "20svh",
                 border: "1px solid black",
@@ -602,7 +602,7 @@ function App() {
               }}
               style={{
                 marginTop: "20px",
-                width: "60%",
+                width: window.innerWidth <= 1200 ? "80%" : "60%",
                 height: "20svh",
                 minHeight: "20svh",
                 border: "1px solid black",
@@ -640,7 +640,7 @@ function App() {
               }}
               style={{
                 marginTop: "20px",
-                width: "60%",
+                width: window.innerWidth <= 1200 ? "80%" : "60%",
                 height: "20svh",
                 minHeight: "20svh",
                 border: "1px solid black",
@@ -654,7 +654,7 @@ function App() {
               }}
               style={{
                 marginTop: "20px",
-                width: "60%",
+                width: window.innerWidth <= 1200 ? "80%" : "60%",
                 height: "20svh",
                 minHeight: "20svh",
                 border: "1px solid black",
@@ -668,7 +668,7 @@ function App() {
               style={{
                 marginTop: "20px",
                 marginBottom: "20px",
-                width: "60%",
+                width: window.innerWidth <= 1200 ? "80%" : "60%", 
                 height: "20svh",
                 minHeight: "20svh",
                 border: "1px solid black",

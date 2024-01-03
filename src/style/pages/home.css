@@ -227,6 +227,7 @@ h1{
         border-radius: 20px;
         z-index: 0;
     }
+
         .habilidadesCard{
         }
         
@@ -240,76 +241,8 @@ h1{
             font-size: 2rem;
             text-align: center;
             margin: 5px;
-        }
-
-    
-     
-        
-        .filtro{
-            position: absolute;
-            width: 40.5%;
-            height: 80svh;
-            opacity: .1;
-            transition: .3s ease-out;
-        }
-        .filtro:hover{
-            position: absolute;
-            width: 40.5%;
-            height: 80svh;
-            backdrop-filter: blur(20px);
-            opacity: 1;
-            z-index: 1;
-        }
-
-        .classe1{
-            background-image: url("../contents/images/conhecimentos/teste6.jpg");
-            transition: background-image 0.5s ease;
-        }
-        .classe2{
-            background-image: url("../contents/images/conhecimentos/teste12.jpg");
-            transition: background-image 0.5s ease;
-        }
-        .classe3{
-            background-image: url("../contents/images/conhecimentos/teste8.jpg");
-            transition: background-image 0.5s ease;
-        }
-        .classe4{
-            background-image: url("../contents/images/conhecimentos/teste9.jpg");
-            transition: background-image 0.5s ease;
-        }
-        .classe5{
-            background-image: url("../contents/images/conhecimentos/teste10.jpg");
-            transition: background-image 0.5s ease;
-            
-        }
-        .projetosBody::-webkit-scrollbar{
-            display: none;
-        }
-            .bkgERP{
-                background-image: url("../contents/images/projetos/ERP.PNG");
-                background-Size: contain;
-                background-Position: center;
-                background-repeat: no-repeat;
-                background-color: rgb(1, 1, 63);
-            }
-            .bkgBrasilLuvas{
-                background-image: url("../contents/images/projetos/brasilLuvas.PNG");
-                background-Size: contain;
-                background-Position: center;
-                background-repeat: no-repeat;
-                background-color: rgb(1, 1, 63);
-                backdrop-filter: blur(20px);
-            }
-            .filtro20px{
-            
-                opacity: 0;
-                transition: .3s ease-in-out;
-            }
-            .filtro20px:hover{
-                opacity: 1;
-            }
-
-        /* /////////// Zoom das tecnologias //////////// */
+        } 
+    /* /////////// Zoom das tecnologias //////////// */
         
          
           .bigHabilidadeCard {
@@ -389,9 +322,60 @@ h1{
             }
         }
           
-    
+    /* //////////// PROJETOS //////////// */
 
-
+        
+               
+       
+               .classe1{
+                   background-image: url("../contents/images/conhecimentos/teste6.jpg");
+                   transition: background-image 0.5s ease;
+               }
+               .classe2{
+                   background-image: url("../contents/images/conhecimentos/teste12.jpg");
+                   transition: background-image 0.5s ease;
+               }
+               .classe3{
+                   background-image: url("../contents/images/conhecimentos/teste8.jpg");
+                   transition: background-image 0.5s ease;
+               }
+               .classe4{
+                   background-image: url("../contents/images/conhecimentos/teste9.jpg");
+                   transition: background-image 0.5s ease;
+               }
+               .classe5{
+                   background-image: url("../contents/images/conhecimentos/teste10.jpg");
+                   transition: background-image 0.5s ease;
+                   
+               }
+               .projetosBody::-webkit-scrollbar{
+                   display: none;
+               }
+                   .bkgERP{
+                       background-image: url("../contents/images/projetos/ERP.PNG");
+                       background-Size: contain;
+                       background-Position: center;
+                       background-repeat: no-repeat;
+                       background-color: rgb(1, 1, 63);
+                   }
+                   .bkgBrasilLuvas{
+                       background-image: url("../contents/images/projetos/brasilLuvas.PNG");
+                       background-Size: contain;
+                       background-Position: center;
+                       background-repeat: no-repeat;
+                       background-color: rgb(1, 1, 63);
+                       backdrop-filter: blur(20px);
+                   }
+                   .filtro20px{
+                   
+                       opacity: 0;
+                       transition: .3s ease-in-out;
+                   }
+                   .filtro20px:hover{
+                       opacity: 1;
+                   }
+       
+               
 
 
 
@@ -480,11 +464,10 @@ h1{
 }
 
 
-        @media (max-width: 500px){
-        }
+    
         
         
-        @media (max-width: 1250px){
+    @media (max-width: 1250px){
     .textoAnimado1Body {
         top: 28svh;
         left: 0;
@@ -520,9 +503,7 @@ h1{
     .habilidadesBody{
         width: 100%;
     }
-    #Projetos{
-        width:100%
-    }
+    
     .textoAnimado1Body span{
         margin-left: 3vw;
     }  

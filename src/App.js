@@ -398,7 +398,6 @@ function App() {
           style={{ zIndex: "0" }}
           sliderPreview={1}
           pagination={{ clickable: true }}
-          navigation
         >
           <SwiperSlide>
             <div className="habilidadesBody">

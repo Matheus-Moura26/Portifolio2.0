@@ -574,6 +574,9 @@ h1{
     html {
         font-size: 50%;
     }
+    .redesSociaisBody{
+        width: 30%;
+    }
 }
 
 @media (max-width: 780px) {
@@ -581,62 +584,71 @@ h1{
     .headerCard{
         width: 98%;
     }
+    .redesSociaisBody{
+        height: 17svh;
+        width: 40%;
+    }
+    
 }
 
 @media (max-width: 550px) {
-  .headerCard ul{
-    display: none;
-  }
-  .menuBtn{
-    position: absolute;
-    right: 40px;
-    display: block  ;
-    width: 30px;
-    height: 30px;
-    color: white;
-  }
-  .closeMenuBtn{
-    position: absolute;
-    display: block  ;
-    right: 40px;
-    margin-top: -90svh;
-    width: 30px;
-    height: 30px;
-    background-color: red;
-    border-radius: 15px;
-    color: white;
-    font-size: 3rem;
-    text-align: center;
-  }
-  .menuMobileBody{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 200svh;
-    background-color: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(20px);
-    z-index: 10;
-  }
-  .menuMobileBody ul{
-    position: absolute;
-    display: block;
-    width: 40%;
-    height: 50svh;
-    z-index: 11;
-  }
-  .menuMobileBody h2 {
-    padding: 10px;
-    background-color: white;
+    .headerCard ul{
+        display: none;
+    }
+    .menuBtn{
+        position: absolute;
+        right: 40px;
+        display: block  ;
+        width: 30px;
+        height: 30px;
+        color: white;
+    }
+    .closeMenuBtn{
+        position: absolute;
+        display: block  ;
+        right: 40px;
+        margin-top: -90svh;
+        width: 30px;
+        height: 30px;
+        background-color: red;
+        border-radius: 15px;
+        color: white;
+        font-size: 3rem;
+        text-align: center;
+    }
+    .menuMobileBody{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 200svh;
+        background-color: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(20px);
+        z-index: 10;
+    }
+    .menuMobileBody ul{
+        position: absolute;
+        display: block;
+        width: 40%;
+        height: 50svh;
+        z-index: 11;
+    }
+    .menuMobileBody h2 {
+        padding: 10px;
+        background-color: white;
     border: 1px solid black;
     border-radius: 10px;
     text-align: center;
     font-size: 2rem;
     color: black;
     z-index: 12;
-  }
+}
+    .redesSociaisBody{
+        width: 50%;
+    }
+    .redesSociaisBody p{
+        font-size: 1.8rem;
+     }
 }
 
-
-    

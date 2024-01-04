@@ -484,88 +484,7 @@ h1{
 
 
 /* /////////////////// MEDIA QUERY ///////////////*/
-@media (max-width: 1036px) {
-    html {
-        font-size: 50%;
-    }
-}
-@media (max-width: 827px) {
-    /* html {
-        font-size: 40%;
-    } */
-    .headerCard{
-        width: 95%;
-    }
-}
-@media (max-width: 780px) {
-    
-    .headerCard{
-        width: 98%;
-    }
-}
-
-@media (max-width: 768px) {
-  .headerCard ul{
-    display: none;
-  }
-  .menuBtn{
-    position: absolute;
-    right: 40px;
-    display: block  ;
-    width: 30px;
-    height: 30px;
-    color: white;
-  }
-  .closeMenuBtn{
-    position: absolute;
-    display: block  ;
-    right: 40px;
-    margin-top: -90svh;
-    width: 30px;
-    height: 30px;
-    background-color: red;
-    border-radius: 15px;
-    color: white;
-    font-size: 3rem;
-    text-align: center;
-  }
-
-  .menuMobileBody{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 200svh;
-    background-color: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(20px);
-    z-index: 10;
-  }
-  .menuMobileBody ul{
-    position: absolute;
-    display: block;
-    width: 40%;
-    height: 50svh;
-    z-index: 11;
-  }
-
-  .menuMobileBody h2 {
-    padding: 10px;
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 10px;
-    text-align: center;
-    font-size: 2rem;
-    color: black;
-    z-index: 12;
-  }
-}
-
-
-    
-        
-        
-    @media (max-width: 1250px){
+@media (max-width: 1250px){
     .textoAnimado1Body {
         top: 28svh;
         left: 0;
@@ -650,3 +569,74 @@ h1{
     }
 
 }
+
+@media (max-width: 1036px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media (max-width: 780px) {
+    
+    .headerCard{
+        width: 98%;
+    }
+}
+
+@media (max-width: 550px) {
+  .headerCard ul{
+    display: none;
+  }
+  .menuBtn{
+    position: absolute;
+    right: 40px;
+    display: block  ;
+    width: 30px;
+    height: 30px;
+    color: white;
+  }
+  .closeMenuBtn{
+    position: absolute;
+    display: block  ;
+    right: 40px;
+    margin-top: -90svh;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 15px;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+  }
+  .menuMobileBody{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 200svh;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(20px);
+    z-index: 10;
+  }
+  .menuMobileBody ul{
+    position: absolute;
+    display: block;
+    width: 40%;
+    height: 50svh;
+    z-index: 11;
+  }
+  .menuMobileBody h2 {
+    padding: 10px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+    z-index: 12;
+  }
+}
+
+
+    

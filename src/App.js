@@ -46,14 +46,16 @@ function App() {
       {
         name: "HTML",
         description: "Linguagem de marcação para documentos web.",
-      },
-      { name: "CSS", description: "Linguagem de estilo para documentos web." },
+      }
     ],
     [
+      { name: "CSS", description: "Linguagem de estilo para documentos web." },
       {
         name: "Javascript",
         description: "Linguagem de programação de alto nível.",
       },
+    ],
+    [
       {
         name: "React",
         description:
@@ -79,12 +81,12 @@ function App() {
         description:
           "Protocolo de transferência de hipertexto para comunicação na World Wide Web.",
       },
+    ],
+    [
       {
         name: "Node.js",
         description: "Ambiente de execução para JavaScript fora do navegador.",
       },
-    ],
-    [
       {
         name: "Python",
         description: "Linguagem de programação de alto nível.",
@@ -94,6 +96,8 @@ function App() {
         description:
           "Framework para construção de aplicativos web com Node.js.",
       },
+    ],
+    [
       {
         name: "Prisma ORM",
         description:
@@ -121,6 +125,8 @@ function App() {
           "Arquitetura de serviços web baseada em REST (Representational State Transfer).",
       },
       { name: "Flask", description: "Framework web leve em Python." },
+    ],
+    [
       {
         name: "SQL",
         description:
@@ -150,6 +156,8 @@ function App() {
         description:
           "Plataforma para desenvolvimento, envio e execução de aplicativos em contêineres.",
       },
+    ],
+    [
       {
         name: "Kubernetes",
         description:
@@ -176,6 +184,8 @@ function App() {
         description:
           "Programação Orientada a Objetos - Paradigma de programação.",
       },
+    ],
+    [
       {
         name: "Arquitetura de software",
         description: "Design e estrutura de sistemas de software.",
@@ -191,37 +201,41 @@ function App() {
           "Arquitetura de software em que um aplicativo é construído como uma única unidade.",
       },
     ],
-    [
-      {
-        name: "Mircroserviços",
-        description:
-          "Abordagem arquitetônica para desenvolvimento de software em que um aplicativo é composto por pequenos serviços independentes.",
-      },
-      {
-        name: "Singleton",
-        description:
-          "Padrão de design que garante que uma classe tenha apenas uma instância e fornece um ponto global de acesso a ela.",
-      },
-      {
-        name: "Oauth",
-        description:
-          "Protocolo de autorização aberto que permite a autenticação segura de um usuário.",
-      },
-      {
-        name: "Basic Authentication",
-        description:
-          "Método simples de autenticação usando um nome de usuário e uma senha.",
-      },
-      {
-        name: "Token Authentication",
-        description: "Método de autenticação usando tokens.",
-      },
-      {
-        name: "Testes Unitarios",
-        description:
-          "Prática de teste de unidades individuais de código-fonte.",
-      },
-    ],
+    [      
+    {
+      name: "Mircroserviços",
+      description:
+        "Abordagem arquitetônica para desenvolvimento de software em que um aplicativo é composto por pequenos serviços independentes.",
+    },
+    {
+      name: "Singleton",
+      description:
+        "Padrão de design que garante que uma classe tenha apenas uma instância e fornece um ponto global de acesso a ela.",
+    },
+    {
+      name: "Oauth",
+      description:
+        "Protocolo de autorização aberto que permite a autenticação segura de um usuário.",
+    },
+  ],
+  [
+    {
+      name: "Basic Authentication",
+      description:
+        "Método simples de autenticação usando um nome de usuário e uma senha.",
+    },
+    {
+      name: "Token Authentication",
+      description: "Método de autenticação usando tokens.",
+    },
+  ],
+  [
+    {
+      name: "Testes Unitarios",
+      description:
+        "Prática de teste de unidades individuais de código-fonte.",
+    },
+  ],
   ];
 
   //////////////////////////////////////FUNCTIONS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\

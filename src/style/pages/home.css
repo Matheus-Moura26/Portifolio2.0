@@ -362,7 +362,6 @@ h1{
             .projetosSection1{
               width: 55%;
               height: 65svh;
-              margin: 0 1.9vw;
               display: flex;
               flex-direction: column;
               align-items: center;
@@ -382,7 +381,9 @@ h1{
                 align-items: center;
                 justify-content: flex-start;
                 flex-direction: column;
-
+               }
+               .projetosSection2Background::-webkit-scrollbar{
+                display: none;
                }
                .projetosSection2 {
                 width: 100%;
@@ -644,17 +645,22 @@ h1{
     color: black;
     z-index: 12;
 }
+
+#Projetos{
+    height: 85%;
+ }
+
 .textoAnimado1Body span{
     margin-left: 0;
 } 
 .textoAnimado1Body span::before{
         
 }
-    .redesSociaisBody{
-        width: 50%;
+.redesSociaisBody{
+    width: 50%;
+}
+.redesSociaisBody p{
+    font-size: 1.8rem;
     }
-    .redesSociaisBody p{
-        font-size: 1.8rem;
-     }
 }
 

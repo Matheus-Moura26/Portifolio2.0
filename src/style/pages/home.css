@@ -644,6 +644,12 @@ h1{
     color: black;
     z-index: 12;
 }
+.textoAnimado1Body span{
+    margin-left: 0;
+} 
+.textoAnimado1Body span::before{
+        
+}
     .redesSociaisBody{
         width: 50%;
     }

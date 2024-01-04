@@ -349,7 +349,7 @@ function App() {
             }}
           >
             {" "}
-            <span className="textSaibaMais">Saiba mais</span>
+            {/* <span className="textSaibaMais">Saiba mais</span> */}
           </div>
         </div>
         <div className="textoAnimado1Body">

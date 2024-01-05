@@ -647,6 +647,10 @@ h1{
     z-index: 12;
 }
 
+.sobreMinBody .text{
+    font-size: 2.2rem;
+}
+
 #Projetos{
     height: 85%;
  }

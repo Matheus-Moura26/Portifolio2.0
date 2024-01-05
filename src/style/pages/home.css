@@ -548,14 +548,14 @@ h1{
            }
     .projetosSection2Background{
         overflow-x: scroll;
-        height: 40svh;
+        height: 25svh;
         width: 100%;
         flex-direction: row;
     }
     
     .projetosSection2{
-        height: 40svh;
-        max-height: 40svh;
+        height: 25svh;
+        max-height: 25svh;
         width: 200%;
         flex-direction: row;
         overflow: scroll;

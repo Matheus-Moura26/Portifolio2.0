@@ -333,7 +333,7 @@ function App() {
       </div>
 
       {/* Sobre mim */}
-      <section id="sobreMin" style={{ width: "100%", height: "90svh" }}>
+      <section id="sobreMin" style={{ width: "100%", height: "90vh" }}>
         <div className="sobreMinBody" data-aos="fade-right">
           <p className="nome">Matheus Moura</p>
           <h2>Desenvolvedor FullStack</h2>
@@ -365,8 +365,8 @@ function App() {
         <div
           style={{
             width: "100%",
-            height: "5svh",
-            marginTop: "85svh",
+            height: "5vh",
+            marginTop: "85vh",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
@@ -380,7 +380,7 @@ function App() {
         id="habilidades"
         style={{
           width: "100%",
-          height: "100svh",
+          height: "100vh",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -456,7 +456,7 @@ function App() {
         id="projetos"
         style={{
           width: "100%",
-          height: "100svh",
+          height: "100vh",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -482,7 +482,7 @@ function App() {
               </h3>
             </div>
 
-            <div style={{ padding: "0 15px", height: "147svh" }}>
+            <div style={{ padding: "0 15px", height: "147vh" }}>
               <p
                 style={{
                   color: portifolioAtual.fontColor,
@@ -554,7 +554,7 @@ function App() {
       <section
         style={{
           width: "100%",
-          height: "25svh",
+          height: "25vh",
           backgroundColor: "black",
           display: "flex",
           alignItems: "center",

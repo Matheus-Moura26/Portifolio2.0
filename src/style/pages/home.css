@@ -24,7 +24,7 @@ h1{
     margin: 0;
     top: 0;
     width: 100%;
-    height: 10svh;
+    height: 10vh;
     background-color: rgba(240, 248, 255, 0);
     backdrop-filter: blur(15px);
     border-radius: 10px;
@@ -78,7 +78,7 @@ h1{
 .appBody{
     margin: 0;
     width: 100%;
-    min-height: 100svh;
+    min-height: 100vh;
     /* background-image: url('../contents/images/backgrounds/3.jpg');
     background-size: cover; 
     background-position: center center;
@@ -93,11 +93,11 @@ h1{
 }
     .sobreMinBody{
         top: 0;
-        margin-top: 30svh;
+        margin-top: 30vh;
         position: absolute;
         left: 3vw;
         width: 50%;
-        height: 50svh;
+        height: 50vh;
         backdrop-filter: blur(20px);
         display: flex;
         flex-direction: column;
@@ -136,13 +136,13 @@ h1{
         }
         
     .textoAnimado1Body{
-        top: 30svh;
+        top: 30vh;
         position: absolute;
         margin: 0;
         padding: 0;
         right: 0px;
         width: 48%;
-        height: 50svh;
+        height: 50vh;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -217,7 +217,7 @@ h1{
         
         
     .habilidadesBody{
-        height: 80svh;
+        height: 80vh;
         width: 80vw;/* 
         background-color: rgba(240, 248, 255, 0.084);
         backdrop-filter: blur(20px); */
@@ -326,9 +326,9 @@ h1{
     /* //////////// PROJETOS //////////// */
 
         #Projetos{
-            margin-top: 10svh;
-            margin-bottom: 20svh;
-            height: 65svh;
+            margin-top: 10vh;
+            margin-bottom: 20vh;
+            height: 65vh;
             border-radius: 20px;
             display: flex;
             flex-wrap: wrap;
@@ -362,7 +362,7 @@ h1{
         }
             .projetosSection1{
               width: 55%;
-              height: 65svh;
+              height: 65vh;
               display: flex;
               flex-direction: column;
               align-items: center;
@@ -376,8 +376,8 @@ h1{
                }
                .projetosSection2Background{
                 width: 40%;
-                height: 65svh;
-                max-height: 65svh;
+                height: 65vh;
+                max-height: 65vh;
                 display: flex;
                 align-items: center;
                 justify-content: flex-start;
@@ -388,8 +388,8 @@ h1{
                }
                .projetosSection2 {
                 width: 100%;
-                height: 65svh;
-                max-height: 65svh;
+                height: 65vh;
+                max-height: 65vh;
                 display: flex;
                 align-items: center;
                 justify-content: flex-start;
@@ -407,8 +407,8 @@ h1{
                         background-color: rgb(1, 1, 63);
                         margin-top: 20px;
                         width: 60%;
-                        height: 20svh;
-                        min-height: 20svh;
+                        height: 20vh;
+                        min-height: 20vh;
                         border: 1px solid black;
                         cursor: pointer;
                         display: flex;
@@ -425,8 +425,8 @@ h1{
                    .bkgBrasilLuvas{
                         margin-top: 20px;
                         width:   60%;
-                        height: 20svh;
-                        min-height: 20svh;
+                        height: 20vh;
+                        min-height: 20vh;
                         border: 1px solid black;
                         cursor: pointer;
                         display: flex;
@@ -449,8 +449,8 @@ h1{
                    .filtro20px{
                         backdrop-filter: blur(10px);
                         width: 100%;
-                        height: 20svh;
-                        min-height: 20svh;
+                        height: 20vh;
+                        min-height: 20vh;
                         opacity: 0;
                         transition: .3s ease-in-out;
                    }
@@ -462,7 +462,7 @@ h1{
     .redesSociaisBody{
         border: 1px solid white;
         border-radius: 20px;
-        height: 20svh;
+        height: 20vh;
         width: 20%;
     }
         .redesSociaisBody p{
@@ -473,7 +473,7 @@ h1{
         .redesSociaisBody div{
             display: flex;
             justify-content: space-around;
-            height: 16svh;
+            height: 16vh;
             align-items: center;
         }
 
@@ -488,11 +488,11 @@ h1{
 /* /////////////////// MEDIA QUERY ///////////////*/
 @media (max-width: 1250px){
     .textoAnimado1Body {
-        top: 20svh;
+        top: 20vh;
         left: 0;
         right: 0;
         width: 95%;
-        height: 10svh;
+        height: 10vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -509,7 +509,7 @@ h1{
         height: 6rem;
     }
     .sobreMinBody{
-        margin-top: 35svh;
+        margin-top: 35vh;
         width: 90%;
         display: flex;
         align-items: center;
@@ -526,21 +526,21 @@ h1{
 
     #Projetos{
         width: 100%;
-        height: 80svh;
+        height: 80vh;
         flex-direction: column;
         flex-wrap: wrap;
     }
     .projetosSection1{
         width: 100%;
-        height: 40svh;
+        height: 40vh;
     }
         .projetosSection1 p{
             font-size: 1.5rem;
         }
         .projetosSection2Background{
             width: 40%;
-            height: 65svh;
-            max-height: 65svh;
+            height: 65vh;
+            max-height: 65vh;
             display: flex;
             align-items: center;
             justify-content: flex-start;
@@ -549,14 +549,14 @@ h1{
            }
     .projetosSection2Background{
         overflow-x: scroll;
-        height: 25svh;
+        height: 25vh;
         width: 100%;
         flex-direction: row;
     }
     
     .projetosSection2{
-        height: 25svh;
-        max-height: 25svh;
+        height: 25vh;
+        max-height: 25vh;
         width: 200%;
         flex-direction: row;
         overflow: scroll;
@@ -587,7 +587,7 @@ h1{
         width: 98%;
     }
     .redesSociaisBody{
-        height: 23svh;
+        height: 23vh;
         width: 40%;
     }
     
@@ -609,7 +609,7 @@ h1{
         position: absolute;
         display: block  ;
         right: 40px;
-        margin-top: -90svh;
+        margin-top: -90vh;
         width: 30px;
         height: 30px;
         background-color: red;
@@ -624,7 +624,7 @@ h1{
         align-items: center;
         justify-content: center;
         width: 100vw;
-        height: 200svh;
+        height: 200vh;
         background-color: rgba(255, 255, 255, 0.5);
         backdrop-filter: blur(20px);
         z-index: 10;
@@ -633,7 +633,7 @@ h1{
         position: absolute;
         display: block;
         width: 40%;
-        height: 50svh;
+        height: 50vh;
         z-index: 11;
     }
     .menuMobileBody h2 {

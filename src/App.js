@@ -6,6 +6,8 @@ import "aos/dist/aos.css";
 import { FaInstagram } from "react-icons/fa";
 import { RiTwitterXLine } from "react-icons/ri";
 import { BsLinkedin } from "react-icons/bs";
+import { IoIosCloseCircle } from "react-icons/io";
+import { IoCloseSharp } from "react-icons/io5";
 
 //importar Pages
 
@@ -298,17 +300,16 @@ function App() {
       {/* Menu */}
       {menu ? (
         <div className="menuMobileBody" data-aos="fade-right">
-          <div className="closeMenuBtn" onClick={toogleMenu}>
-            X
-          </div>
+            {/* <IoIosCloseCircle className="closeMenuBtn" onClick={toogleMenu}/> */}
+            <IoCloseSharp className="closeMenuBtn" onClick={toogleMenu}/>
           <ul>
-            <a href="#sobreMin">
+            <a href="#sobreMin" onClick={toogleMenu}>
               <h2>Sobre Mim</h2>
             </a>
-            <a href="#habilidades">
+            <a href="#habilidades" onClick={toogleMenu}>
               <h2>Habilidades</h2>
             </a>
-            <a href="#projetos">
+            <a href="#projetos" onClick={toogleMenu}>
               <h2>Projetos</h2>
             </a>
           </ul>

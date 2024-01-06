@@ -583,7 +583,7 @@ function App() {
                 }}
               />
             </a>
-            <a href="">
+            <a href="www.linkedin.com/in/matheusmoura-5995ab216">
               <BsLinkedin
                 style={{
                   width: "30px",

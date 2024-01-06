@@ -621,12 +621,13 @@ h1{
         text-align: center;
     }
     .menuMobileBody{
-        position: absolute;
+        top: 0;
+        position: fixed;
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100vw;
-        height: 200vh;
+        height: 100vh;
         background-color: rgba(255, 255, 255, 0.5);
         backdrop-filter: blur(20px);
         z-index: 10;
@@ -679,6 +680,6 @@ h1{
 }
 .redesSociaisBody p{
     font-size: 1.8rem;
-    }
+}
 }
 

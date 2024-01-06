@@ -593,6 +593,8 @@ h1{
     
 }
 
+
+
 @media (max-width: 550px) {
     .headerCard ul{
         display: none;
@@ -663,12 +665,14 @@ h1{
  .projetosSection2{
     height: 100%;
  }
-
+ .textoAnimado1Body{
+    width: 100%;
+ }
 .textoAnimado1Body span{
-    margin-left: 0;
+    margin: 0;
 } 
 .textoAnimado1Body span::before{
-        font-size: 4rem;
+        font-size: 3.5rem;
 }
 .redesSociaisBody{
     width: 50%;

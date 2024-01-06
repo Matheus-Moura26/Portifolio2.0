@@ -630,25 +630,31 @@ a{
         justify-content: center;
         width: 100vw;
         height: 100vh;
-        background-color: transparent;
+        background-color: rgba(245, 245, 245, 0.856);
         backdrop-filter: blur(10px);
         z-index: 10;
     }
     .menuMobileBody ul{
         position: absolute;
-        display: block;
+        display: flex;
+        flex-direction: column;
         width: 40%;
-        height: 50vh;
+        height: 20vh;
         z-index: 11;
+        align-items: center;
+        justify-content: space-around;
+        border: 1px black;
     }
     .menuMobileBody h2 {
-    padding: 10px;
-    background-color: blue;
+     padding: 0px;
+     margin: 10px 0;
+    /*background-color: orangered;
     border: 1px solid black;
-    border-radius: 15px;
+    border-radius: 15px; */
     text-align: center;
-    font-size: 3rem;
-    color: white;
+    font-size: 4rem;
+    font-weight: bolder;
+    color: black;
     z-index: 3;
 }
 

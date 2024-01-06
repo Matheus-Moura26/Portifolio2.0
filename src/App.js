@@ -299,10 +299,10 @@ function App() {
     <div className="appBody">
       {/* Menu */}
       {menu ? (
-        <div className="menuMobileBody" data-aos="fade-right">
+        <div className="menuMobileBody" data-aos="fade-up">
             {/* <IoIosCloseCircle className="closeMenuBtn" onClick={toogleMenu}/> */}
             <IoCloseSharp className="closeMenuBtn" onClick={toogleMenu}/>
-          <ul>
+          <ul data-aos="fade-right">
             <a href="#sobreMin" onClick={toogleMenu}>
               <h2>Sobre Mim</h2>
             </a>

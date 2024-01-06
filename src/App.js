@@ -568,13 +568,13 @@ function App() {
             Me siga nas redes sociais
           </p>
           <div>
-            <a href="">
+            <a href="https://www.instagram.com/algorithmic.atlas/">
               <FaInstagram
                 color="white"
                 style={{ width: "30px", height: "30px", cursor: "pointer" }}
               />
             </a>
-            <a href="">
+            <a href="https://twitter.com/AlgorithmicAtla">
               <RiTwitterXLine
                 style={{
                   width: "30px",
@@ -584,7 +584,7 @@ function App() {
                 }}
               />
             </a>
-            <a href="www.linkedin.com/in/matheusmoura-5995ab216">
+            <a href="https://www.linkedin.com/in/matheus-moura-5995ab216/">
               <BsLinkedin
                 style={{
                   width: "30px",

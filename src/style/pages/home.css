@@ -149,13 +149,13 @@ h1{
     }
         .textoAnimado1Body p{
             color: white;
-            font-size: 1rem;
+            font-size: 5rem;
         }    
         .textoAnimado1Body span{
             margin-left: 12vw;
             position: relative;
             color: orangered;
-            font-size: 1rem;
+            font-size: 5rem;
             
         }  
         
@@ -488,7 +488,7 @@ h1{
 /* /////////////////// MEDIA QUERY ///////////////*/
 @media (max-width: 1250px){
     .textoAnimado1Body {
-        top: 28svh;
+        top: 20svh;
         left: 0;
         right: 0;
         width: 95%;

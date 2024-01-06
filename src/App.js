@@ -45,11 +45,9 @@ function App() {
     [
       {
         name: "HTML",
-        description: "Linguagem de marcação para documentos web.",
-      }
-    ],
-    [
-      { name: "CSS", description: "Linguagem de estilo para documentos web." },
+        description: "(Hypertext Markup Language) é uma linguagem de marcação usada na construção e estruturação de páginas da web.",
+      },
+      { name: "CSS", description: "(Cascading Style Sheets) é uma linguagem de estilo usada para controlar a apresentação e o layout de elementos em documentos HTML. 'criar o design e estilização de sites.'" },
       {
         name: "Javascript",
         description: "Linguagem de programação de alto nível.",
@@ -66,12 +64,12 @@ function App() {
         description:
           "Funções especiais no React que permitem o uso de state e outras funcionalidades em componentes funcionais.",
       },
-    ],
-    [
       {
         name: "Git",
         description: "Sistema de controle de versão distribuído.",
       },
+    ],
+    [
       {
         name: "GitHub",
         description: "Plataforma de hospedagem de código-fonte e colaboração.",
@@ -81,12 +79,12 @@ function App() {
         description:
           "Protocolo de transferência de hipertexto para comunicação na World Wide Web.",
       },
-    ],
-    [
       {
         name: "Node.js",
         description: "Ambiente de execução para JavaScript fora do navegador.",
       },
+    ],
+    [
       {
         name: "Python",
         description: "Linguagem de programação de alto nível.",
@@ -94,70 +92,63 @@ function App() {
       {
         name: "Express",
         description:
-          "Framework para construção de aplicativos web com Node.js.",
+          "Express é um framework web para Node.js que simplifica o desenvolvimento de aplicativos e APIs, facilitando o roteamento e manipulação de requisições.",
       },
-    ],
-    [
       {
         name: "Prisma ORM",
         description:
-          "Ferramenta de mapeamento objeto-relacional (ORM) para Node.js e TypeScript.",
-      },
-      {
-        name: "Mongoose",
-        description: "Biblioteca de modelagem de objetos MongoDB para Node.js.",
-      },
-      {
-        name: "Express",
-        description:
-          "Framework web de alto nível em Python que incentiva o desenvolvimento rápido e limpo.",
+          "Prisma ORM é uma ferramenta de mapeamento objeto-relacional (ORM) para bancos de dados em Node.js e TypeScript, simplificando a interação com bancos de dados SQL.",
       },
     ],
     [
+      {
+        name: "Mongoose",
+        description: "Mongoose é uma biblioteca ODM (Object Data Modeling) para Node.js e MongoDB, facilitando a interação com o banco de dados NoSQL.",
+      },
+      {
+        name: "API Restful",
+        description:
+          "Uma API REST é uma interface de programação de aplicações baseada nos princípios arquitetônicos REST, utilizando métodos HTTP para manipulação de recursos.",
+      },
       {
         name: "Django",
         description:
           "Framework web de alto nível em Python que incentiva o desenvolvimento rápido e limpo.",
       },
-      {
-        name: "API Restful",
-        description:
-          "Arquitetura de serviços web baseada em REST (Representational State Transfer).",
-      },
-      { name: "Flask", description: "Framework web leve em Python." },
     ],
     [
+      { name: "Flask", description: "Flask é um microframework web em Python para desenvolvimento de aplicações web minimalistas e escaláveis." },
       {
         name: "SQL",
         description:
-          "Linguagem de consulta estruturada para gerenciamento de banco de dados.",
+          "SQL (Structured Query Language) é uma linguagem de programação usada para gerenciar e manipular bancos de dados relacionais.",
       },
       {
         name: "NoSQL",
         description:
-          "Abordagem de design de banco de dados para dados não relacionais.",
-      },
-      {
-        name: "MySQL",
-        description: "Sistema de gerenciamento de banco de dados relacional.",
+          "NoSQL é uma categoria de bancos de dados que não seguem o modelo relacional tradicional, oferecendo abordagens alternativas de armazenamento e recuperação de dados.",
       },
     ],
     [
       {
+        name: "MySQL",
+        description: "MySQL é um sistema de gerenciamento de banco de dados relacional (RDBMS) de código aberto amplamente utilizado.",
+      },
+      {
         name: "MongoDB",
-        description: "Banco de dados NoSQL orientado a documentos.",
+        description: "MongoDB é um sistema de gerenciamento de banco de dados NoSQL, orientado a documentos, que armazena dados em formato BSON (Binary JSON).",
       },
       {
         name: "ELastic Searchk",
-        description: "Motor de busca e análise de dados.",
+        description: "Elasticsearch é um mecanismo de busca e análise de dados distribuído, baseado em Lucene, utilizado para pesquisar, analisar e visualizar grandes volumes de dados de forma eficiente.",
       },
+    ],
+    [
       {
         name: "Docker",
         description:
           "Plataforma para desenvolvimento, envio e execução de aplicativos em contêineres.",
       },
-    ],
-    [
       {
         name: "Kubernetes",
         description:
@@ -168,24 +159,24 @@ function App() {
         description:
           "Conjunto de padrões para implementação de serviços na web.",
       },
-      { name: "Apache", description: "Servidor web de código aberto." },
     ],
     [
+      { name: "Apache", description: "Servidor web de código aberto." },
       {
         name: "AWS",
         description: "Amazon Web Services - Plataforma de serviços em nuvem.",
       },
       {
         name: "Kafka",
-        description: "Plataforma distribuída de streaming de eventos.",
+        description: "Kafka é uma plataforma de streaming distribuída que permite a ingestão, armazenamento e processamento de eventos em tempo real, sendo frequentemente utilizado para sistemas de mensageria em larga escala.",
       },
+    ],
+    [
       {
         name: "POO",
         description:
           "Programação Orientada a Objetos - Paradigma de programação.",
       },
-    ],
-    [
       {
         name: "Arquitetura de software",
         description: "Design e estrutura de sistemas de software.",
@@ -195,30 +186,30 @@ function App() {
         description:
           "Modelo de execução de computação em nuvem onde o provedor gerencia a infraestrutura automaticamente.",
       },
+    ],
+    [
       {
         name: "Monolito",
         description:
           "Arquitetura de software em que um aplicativo é construído como uma única unidade.",
       },
+      {
+        name: "Mircroserviços",
+        description:
+          "Abordagem arquitetônica para desenvolvimento de software em que um aplicativo é composto por pequenos serviços independentes.",
+      },
+      {
+        name: "Singleton",
+        description:
+          "Padrão de design que garante que uma classe tenha apenas uma instância e fornece um ponto global de acesso a ela.",
+      },
     ],
     [      
-    {
-      name: "Mircroserviços",
-      description:
-        "Abordagem arquitetônica para desenvolvimento de software em que um aplicativo é composto por pequenos serviços independentes.",
-    },
-    {
-      name: "Singleton",
-      description:
-        "Padrão de design que garante que uma classe tenha apenas uma instância e fornece um ponto global de acesso a ela.",
-    },
     {
       name: "Oauth",
       description:
         "Protocolo de autorização aberto que permite a autenticação segura de um usuário.",
     },
-  ],
-  [
     {
       name: "Basic Authentication",
       description:
@@ -235,6 +226,8 @@ function App() {
       description:
         "Prática de teste de unidades individuais de código-fonte.",
     },
+  ],
+  [
   ],
   ];
 

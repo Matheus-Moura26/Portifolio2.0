@@ -333,7 +333,7 @@ h1{
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
-            justify-content: center;
+            justify-content: space-between;
             background-size: cover;
             background-position: center;
             width: 80%;
@@ -653,6 +653,15 @@ h1{
 
 #Projetos{
     height: 85%;
+ }
+ .projetosSection1{
+    height: 60%;
+ }
+ .projetosSection2Background{
+    height: 35%;
+ }
+ .projetosSection2{
+    height: 100%;
  }
 
 .textoAnimado1Body span{
